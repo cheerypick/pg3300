@@ -14,7 +14,7 @@ using System.Linq;
 //          -Tomas
 //
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	internal class Coord
 	{
@@ -36,7 +36,7 @@ namespace SnakeMess
 		}
 	}
 
-	internal class SnakeMess
+	internal class SnakeNotMess
 	{
 		public static void Main(string[] arguments)
 		{
