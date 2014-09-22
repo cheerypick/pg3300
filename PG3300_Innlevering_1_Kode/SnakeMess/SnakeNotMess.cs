@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
+
+// HHEEEEEEIIIIII!!!!! DETERKATRNEHER
 // WARNING: DO NOT code like this. Please. EVER! 
 //          "Aaaargh!" 
 //          "My eyes bleed!" 
@@ -16,20 +18,20 @@ using System.Linq;
 
 namespace SnakeMess
 {
-	internal class Coord
+	internal class Position
 	{
-		public const string Ok = "Ok";
+		//public const string Ok = "Ok";
 
 		public int X;
 		public int Y;
 
-		public Coord(int x = 0, int y = 0)
+		public Position(int x = 0, int y = 0)
 		{
 			X = x;
 			Y = y;
 		}
 
-		public Coord(Coord input)
+		public Position(Position input)
 		{
 			X = input.X;
 			Y = input.Y;
@@ -45,12 +47,15 @@ namespace SnakeMess
 			short last = newDirection;
 			int boardWidth = Console.WindowWidth, boardHeight = Console.WindowHeight;
 			var randomNumberGenerator = new Random();
-			var app = new Coord();
-			var snake = new List<Coord>();
-			snake.Add(new Coord(10, 10));
-			snake.Add(new Coord(10, 10));
-			snake.Add(new Coord(10, 10));
-			snake.Add(new Coord(10, 10));
+			var app = new Position();
+			var snake = new List<Position>
+			{
+				
+				new Position(10, 10),
+				new Position(10, 10),
+				new Position(10, 10),
+				new Position(10, 10)
+			};
 			Console.CursorVisible = false;
 			Console.ForegroundColor = ConsoleColor.Green;
 			Console.SetCursorPosition(10, 10);
@@ -59,13 +64,7 @@ namespace SnakeMess
 			{
 				app.X = randomNumberGenerator.Next(0, boardWidth);
 				app.Y = randomNumberGenerator.Next(0, boardHeight);
-				bool spot = true;
-				foreach (Coord i in snake)
-					if (i.X == app.X && i.Y == app.Y)
-					{
-						spot = false;
-						break;
-					}
+				bool spot = snake.All(i => i.X != app.X || i.Y != app.Y);
 				if (spot)
 				{
 					Console.ForegroundColor = ConsoleColor.Red;
@@ -99,9 +98,9 @@ namespace SnakeMess
 					if (timer.ElapsedMilliseconds < 100)
 						continue;
 					timer.Restart();
-					var tail = new Coord(snake.First());
-					var head = new Coord(snake.Last());
-					var newH = new Coord(head);
+					var tail = new Position(snake.First());
+					var head = new Position(snake.Last());
+					var newH = new Position(head);
 					switch (newDirection)
 					{
 						case 0:
@@ -134,7 +133,7 @@ namespace SnakeMess
 								app.X = randomNumberGenerator.Next(0, boardWidth);
 								app.Y = randomNumberGenerator.Next(0, boardHeight);
 								bool found = true;
-								foreach (Coord i in snake)
+								foreach (Position i in snake)
 									if (i.X == app.X && i.Y == app.Y)
 									{
 										found = false;
@@ -151,7 +150,7 @@ namespace SnakeMess
 					if (!inUse)
 					{
 						snake.RemoveAt(0);
-						foreach (Coord x in snake)
+						foreach (Position x in snake)
 							if (x.X == newH.X && x.Y == newH.Y)
 							{
 								// Death by accidental self-cannibalism.

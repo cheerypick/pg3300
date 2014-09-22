@@ -21,3 +21,6 @@ C:\_MyStuff_\WesterdalsOsloACT\PG3300_Programvarearkitektur\Innleveringer_Eksame
 \\psf\Home\Downloads\PG3300_Innlevering1_TekstOgKode\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
 Z:\Users\altavista\pg3300\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.exe
 Z:\Users\altavista\pg3300\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+Z:\Users\altavista\pg3300\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.exe
+Z:\Users\altavista\pg3300\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.pdb
+Z:\Users\altavista\pg3300\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
