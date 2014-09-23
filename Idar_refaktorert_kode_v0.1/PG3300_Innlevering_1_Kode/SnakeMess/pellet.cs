@@ -27,6 +27,9 @@ namespace SnakeMess {
         public void placePellet(Snake snake, int boardH, int boardW){
             Random random = new Random();
             snake.grow = true;
+            //snake.addBody(1, snake.getTail().X, snake.getTail().Y);
+            
+
             while (true) {
                 X = random.Next(0, boardW);
                 Y = random.Next(0, boardH);

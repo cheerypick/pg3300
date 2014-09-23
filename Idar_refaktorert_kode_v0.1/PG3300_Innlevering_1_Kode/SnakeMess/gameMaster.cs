@@ -13,33 +13,38 @@ namespace SnakeMess
         
 
         public int ReadKeys(int lastDirection)  {
-            _inputKey = Console.ReadKey();
+
+            if(Console.KeyAvailable)
+             _inputKey = Console.ReadKey();
             
-            
+           
             switch (_inputKey.Key) {
               /*  case ConsoleKey.Escape:
-                    return 4;
+                    return 4;*/
                 case ConsoleKey.Spacebar:
-                    return 5;*/
-                case ConsoleKey.UpArrow:
-                    if(lastDirection != 0)
-                        return 0;
-                    return -1;
-                case ConsoleKey.RightArrow :
-                    if(lastDirection != 1)
-                    return 1;
-                    return -1;
-                case ConsoleKey.DownArrow:
+                    return 5;
+                case ConsoleKey.UpArrow: // 0
                     if(lastDirection != 2)
-                    return 2;
-                    return -1;
-                case ConsoleKey.LeftArrow:
+                        return 0;
+                    return lastDirection;
+
+                case ConsoleKey.RightArrow: // 1
                     if(lastDirection != 3)
-                    return 3;
-                    return -1;
+                        return 1;
+                    return lastDirection;
+
+                case ConsoleKey.DownArrow: // 2
+                    if(lastDirection != 0)
+                        return 2;
+                    return lastDirection;
+
+                case ConsoleKey.LeftArrow: // 3
+                    if(lastDirection != 1)
+                        return 3;
+                    return lastDirection;
 
                 default:
-                    return -1;
+                    return lastDirection;
 
                    
             }
@@ -57,7 +62,7 @@ namespace SnakeMess
        /* public static int readKeys(int last)
         {
             ConsoleKeyInfo cki = Console.ReadKey(true);
-            /* if (cki.Key == ConsoleKey.Escape)
+             if (cki.Key == ConsoleKey.Escape)
                 // set game over
 
             else if (cki.Key == ConsoleKey.Spacebar)

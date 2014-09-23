@@ -10,7 +10,10 @@ using System.Diagnostics;
 
 namespace SnakeMess
 {
-    internal class screenController {
+    internal class screenController
+    {
+
+        private int lastDir = 2;
 
         public void writeStartUp(){
             Console.CursorVisible = false;
@@ -20,29 +23,36 @@ namespace SnakeMess
         }
 
         public void updateScreen(Snake snake, pellet pellet, Coord newHead, int newDir) {
-            snake.getCoords().RemoveAt(0);
+            
             Console.ForegroundColor = ConsoleColor.Green;
             Console.SetCursorPosition(snake.getHead().X, snake.getHead().Y);
             Console.Write("O");
 
-            if (snake.grow = true) {
+            if (snake.grow != true) {
+                snake.getCoords().RemoveAt(0);
                 Console.SetCursorPosition(snake.getTail().X, snake.getTail().Y);
                 Console.Write(" ");
+                
+            }
+            else{
+                snake.getCoords().Add(newHead);
+                Console.SetCursorPosition(snake.getTail().X, snake.getTail().Y);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("0");
                 snake.grow = false;
             }
-
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(pellet.GetCoords().X, pellet.GetCoords().Y);
             Console.Write("$");
 
-
-           snake.getCoords().Add(newHead);
+            
+            snake.getCoords().Add(newHead);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.SetCursorPosition(newHead.X, newHead.Y);
             Console.Write("@");
 
-            //last = newDir;
+            lastDir = newDir;
         }
 
 
@@ -50,8 +60,7 @@ namespace SnakeMess
             return Console.WindowHeight;
         }
 
-        public int getWidth()
-        {
+        public int getWidth(){
             return Console.WindowWidth;
         }
     }

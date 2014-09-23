@@ -46,6 +46,8 @@ namespace SnakeMess
             int lastDirectionMoved = newDir;
             int boardW = screen.getWidth(), boardH = screen.getHeight();
 
+            ConsoleKeyInfo cki;
+
             Coord newTail;
 
 
@@ -64,7 +66,7 @@ namespace SnakeMess
             Console.ForegroundColor = ConsoleColor.Green; 
             Console.SetCursorPosition( 10, 10 ); 
             Console.Write( "@" );*/
-            screen.writeStartUp();
+          //  screen.writeStartUp();
 
 
             // place ¨pellet in world
@@ -92,31 +94,34 @@ namespace SnakeMess
 
             while (!gg)
             {
+                newDir = gm.ReadKeys(lastDirectionMoved);
+                snake.setDirection( newDir );
+              /*  if (Console.KeyAvailable)
+                {
+                    //newDir = gm.ReadKeys();
+                    //snake.setDirection( newDir );
+                    cki = Console.ReadKey();
 
-               /* if (Console.KeyAvailable)
-                    newDir = gm.ReadKeys();*/
-                snake.setDirection( gm.ReadKeys(lastDirectionMoved) );
+                    if (cki.Key == ConsoleKey.Escape)
+                        gg = true;
 
-                /*
-					if ( cki.Key == ConsoleKey.Escape )
-						gg = true;
+                    else if (cki.Key == ConsoleKey.Spacebar)
+                        pause = !pause;
 
-					else if ( cki.Key == ConsoleKey.Spacebar )
-						pause = !pause;
+                    else if (cki.Key == ConsoleKey.UpArrow && lastDirectionMoved != 2)
+                        newDir = 0;
 
-					else if ( cki.Key == ConsoleKey.UpArrow && last != 2 )
-						newDir = 0;
+                    else if (cki.Key == ConsoleKey.RightArrow && lastDirectionMoved != 3)
+                        newDir = 1;
 
-					else if ( cki.Key == ConsoleKey.RightArrow && last != 3 )
-						newDir = 1;
+                    else if (cki.Key == ConsoleKey.DownArrow && lastDirectionMoved != 0)
+                        newDir = 2;
 
-					else if ( cki.Key == ConsoleKey.DownArrow && last != 0 )
-						newDir = 2;
+                    else if (cki.Key == ConsoleKey.LeftArrow && lastDirectionMoved != 1)
+                        newDir = 3;
+                }*/
 
-					else if ( cki.Key == ConsoleKey.LeftArrow && last != 1 )
-						newDir = 3;*/
-
-                if (!pause)
+                if (!(newDir == 5))
                 {
                     if (t.ElapsedMilliseconds < 100)
                         continue;
@@ -186,6 +191,7 @@ namespace SnakeMess
                     snake.checkSelfCannibalism(gm, newHead);
                     /*if ( !inUse ){
 						snake.getCoords().RemoveAt( 0 );
+                     
 						foreach ( Coord x in snake.getCoords() )
 							if ( x.X == newHead.X && x.Y == newHead.Y ){
 								// Death by accidental self-cannibalism.

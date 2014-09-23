@@ -20,7 +20,8 @@ namespace SnakeMess {
         }
 
         public void setDirection(int newDir) {
-            direction = newDir;
+            if(newDir != -1)
+             direction = newDir;
         }
 
         public void addBody(int bodies, int xPosition, int yPosition) {
