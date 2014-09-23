@@ -4,50 +4,57 @@ using System.Linq;
 using System.Text;
 
 namespace SnakeMess {
+    // TSSSSSSSSSSZZZZZZZZZ
     public class Snake {
 
 
-        // private Direction direction; ** FIX PLZ **
+        // Direction
         private int direction;
+
+        // Snake body
         private List<Coord> snakeBody;
-        private Coord tail, head, newHead;
+
+        // Coords for head and new Head
+        private Coord head, newHead;
+
+        // Boolean for letting snake grow
         public bool grow;
 
+        // Constructor
         public Snake() {
             snakeBody = new List<Coord>();
             grow = true;
-            //direction = new Direction();
         }
 
+        // Setdirection. Catches bad input
         public void setDirection(int newDir) {
             if(newDir != -1)
              direction = newDir;
         }
 
-        
-
-        /*public void addBody(Coord newHead){
-            getCoords().Add(newHead);
-        }*/
-
+        // Add bodies to snake
         public void addBody(int bodies, int xPosition, int yPosition) {
             for (int i = 0; i < bodies; i++) {
                 snakeBody.Add(new Coord(xPosition, yPosition));
             }
         }
 
+        // Return snakes coords
         public List<Coord> getCoords() {
             return snakeBody;
         }
 
+        // BJ lulz
         public Coord getHead() {
             return snakeBody.Last();
         }
 
+        // Get tail, is this even used?
         public Coord getTail() {
             return snakeBody.First();
         }
 
+        // Check if snake has sniffed fuel
         public void checkSelfCannibalism(GameMaster gm, Coord newHead) {
 
             foreach (Coord x in getCoords())
@@ -59,11 +66,14 @@ namespace SnakeMess {
 
         }
 
+        // Method for adding new head to the right side and direction of snake
         public Coord getNewHead() {
-            tail = new Coord(snakeBody.First());
+            // Get head
             head = new Coord(snakeBody.Last());
+            // Set new head as head
             newHead = new Coord(head);
 
+            // Where head is created is decided by direction
             switch (direction) {
                 case 0:
                     newHead.Y -= 1;
@@ -84,10 +94,9 @@ namespace SnakeMess {
 
         }
 
+        // Check if head is colliding
         public bool checkBoardCollision(int boardH, int boardW) {
-            if (newHead.X < 0 || newHead.X >= boardW || newHead.Y < 0 || newHead.Y >= boardH)
-                return true;
-            return false;
+            return (newHead.X < 0 || newHead.X >= boardW || newHead.Y < 0 || newHead.Y >= boardH);
         }
     }
 }

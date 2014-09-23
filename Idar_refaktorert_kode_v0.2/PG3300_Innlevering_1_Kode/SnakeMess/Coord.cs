@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 
 namespace SnakeMess {
-
+    // Easy
         public class Coord {
-        //public const string Ok = "Ok";
 
         public int X;
         public int Y;

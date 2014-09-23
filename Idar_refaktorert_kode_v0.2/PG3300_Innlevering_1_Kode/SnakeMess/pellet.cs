@@ -4,39 +4,39 @@ using System.Linq;
 using System.Text;
 
 namespace SnakeMess {
-    public class pellet
-    {
-        private int X, Y;
-        private Coord pelletCoord;
+    public class pellet {
+        private int X, Y; // Coordinates, these may be removed
+        private Coord pelletCoord; // Real coordinates
 
-        public pellet(int x, int y)
-        {
-            this.X = x;
-            this.Y = y;
+        // Constructor
+        public pellet(int x, int y) {
+            X = x;
+            Y = y;
             pelletCoord = new Coord(x, y);
         }
 
-        public Boolean checkIfEatingPellet(Snake snake){
+        // Check if snake is eating pellet
+        public Boolean checkIfEatingPellet(Snake snake) {
             return (snake.getNewHead().X == pelletCoord.X && snake.getNewHead().Y == pelletCoord.Y);
         }
 
 
+        // Place new pellet
+        public void placePellet(Snake snake, int boardH, int boardW) {
+            var random = new Random();
 
-    public void placePellet(Snake snake, int boardH, int boardW){
-            Random random = new Random();
-
+            // Set snake to grow if a pellet is being placed. I recommend moving this
             snake.grow = true;
+
+            // Try to place in a new spot
             while (true) {
                 X = random.Next(0, boardW);
                 Y = random.Next(0, boardH);
 
-                bool foundSpot = true;
+                // This made itself, rofl, idk. Kinda makes sense
+                var foundSpot = snake.getCoords().All(coord => X != coord.X || Y != coord.Y);
 
-                foreach (Coord coord in snake.getCoords())
-                    if (X == coord.X && Y == coord.Y) {
-                        foundSpot = false;
-                        break;
-                    }
+                // Place if spot is safe, place pellet
                 if (foundSpot) {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.SetCursorPosition(X, Y);          // ????
@@ -47,17 +47,10 @@ namespace SnakeMess {
             }
         }
 
-        public Coord GetCoords(){
+        // u get the idea
+        public Coord GetCoords() {
             return pelletCoord;
         }
     }
 
-       /* private void checkIfFull(Snake snake, int boardW, int boardH) {
-            if (snake.getCoords().Equals(pelletCoord)){
-						if ( snake.getCoords().Count + 1 >= boardW * boardH )
-							// No more room to place apples -- game over.
-							gg = true;
-            }
-        }*/
-    
 }

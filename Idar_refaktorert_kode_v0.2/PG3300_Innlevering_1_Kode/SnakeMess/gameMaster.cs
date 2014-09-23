@@ -5,21 +5,23 @@ using System.Text;
 
 namespace SnakeMess
 {
+    // Game master is master of gamez
     public class GameMaster{
         private ConsoleKeyInfo _inputKey;
         private Boolean gameOver;
 
-        public GameMaster() { }
         
-
+        // Method for reading keys
         public int ReadKeys(int lastDirection)  {
 
+            // If key is pressed, read it
             if(Console.KeyAvailable)
              _inputKey = Console.ReadKey();
             
            
+            // Return diffrent ints for different inputs from different keys, different
             switch (_inputKey.Key) {
-              /*  case ConsoleKey.Escape:
+              /*  case ConsoleKey.Escape: // THIS IS FOR ESCAPE DO NOT REMOVE ME
                     return 4;*/
                 case ConsoleKey.Spacebar:
                     return 5;
@@ -50,37 +52,11 @@ namespace SnakeMess
             }
         }
 
+        // Set game over
         public void setGameOver(Boolean gameState){
             gameOver = gameState;
-            //Environment.Exit(1);
+            //Environment.Exit(1); // FOR EXITING GAME
         }
-
-        public bool getGameOver() {
-            return gameOver;
-        }
-
-       /* public static int readKeys(int last)
-        {
-            ConsoleKeyInfo cki = Console.ReadKey(true);
-             if (cki.Key == ConsoleKey.Escape)
-                // set game over
-
-            else if (cki.Key == ConsoleKey.Spacebar)
-                pause = !pause;
-
-            if (cki.Key == ConsoleKey.UpArrow && last != 2)
-                return 0;
-
-            else if (cki.Key == ConsoleKey.RightArrow && last != 3)
-                return 1;
-
-            else if (cki.Key == ConsoleKey.DownArrow && last != 0)
-                return 2;
-
-            else if (cki.Key == ConsoleKey.LeftArrow && last != 1)
-                return 3;
-            else return 9;
-        }*/
     }
  }
 
