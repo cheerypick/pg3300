@@ -33,12 +33,6 @@ namespace SnakeMess {
                 snake.getCoords().RemoveAt(0);
             }
 
-            // Write a pellet at pellet station NUTNUT
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.SetCursorPosition(pellet.GetCoords().X, pellet.GetCoords().Y);
-            Console.Write("$");
-
-
             // Add new head to snake 
             snake.getCoords().Add(newHead);
             Console.ForegroundColor = ConsoleColor.Green;

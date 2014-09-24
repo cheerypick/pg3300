@@ -25,9 +25,6 @@ namespace SnakeMess {
         public void placePellet(Snake snake, int boardH, int boardW) {
             var random = new Random();
 
-            // Set snake to grow if a pellet is being placed. I recommend moving this
-            snake.grow = true;
-
             // Try to place in a new spot
             while (true) {
                 X = random.Next(0, boardW);
