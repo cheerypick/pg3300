@@ -8,9 +8,7 @@ using System.Diagnostics;
 namespace SnakeMess{
     
     internal class SnakeMess {
-        public static void Main(string[] arguments)
-        {
-
+        public static void Main(string[] arguments){
             // Boolean for running the game
             const bool runGame = true;
 
@@ -44,7 +42,6 @@ namespace SnakeMess{
             Console.SetCursorPosition( 10, 10 ); 
             Console.Write( "@" );
  
-
             // place pellet in world
             pellet.placePellet(snake, boardH, boardW);
            
@@ -73,7 +70,6 @@ namespace SnakeMess{
 
                     // Check if snake is eating pellet
                     if (pellet.checkIfEatingPellet(snake)){
-                        
                         // Grow snake
                         snake.grow = true;
                         // Place new pellet
@@ -87,7 +83,7 @@ namespace SnakeMess{
                     screen.updateScreen(snake, pellet, newHead);
                
                     // Update last direction. Shark bois 4ever
-                   lastDirectionMoved = newDir;
+                    lastDirectionMoved = newDir;
                 }
             }
         }

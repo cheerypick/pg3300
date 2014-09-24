@@ -35,9 +35,7 @@ namespace SnakeMess {
 
                 // Place if spot is safe, place pellet
                 if (foundSpot) {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.SetCursorPosition(X, Y);          // ????
-                    Console.Write("$");
+                    screenController.drawPellet(new Coord(X,Y));
                     pelletCoord = new Coord(X, Y);
                     break;
                 }
