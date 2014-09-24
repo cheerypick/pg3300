@@ -4,11 +4,14 @@ using System.Linq;
 using System.Diagnostics;
 
 // I reccomend watching this for getting a felling of the code while reading. Enjoy.
+using System.Threading;
 
 namespace SnakeMess{
-    
-    internal class SnakeMess {
-        public static void Main(string[] arguments){
+
+    internal class SnakeMess
+    {
+        public static void Main(string[] arguments)
+        {
             // Boolean for running the game
             const bool runGame = true;
 
@@ -36,34 +39,30 @@ namespace SnakeMess{
             // Add 4 bodies to snake
             snake.addBody(4, 10, 10);
 
-            // Console commands (can be moved to screen handler)
-            Console.CursorVisible = false; 
-            Console.ForegroundColor = ConsoleColor.Green; 
-            Console.SetCursorPosition( 10, 10 ); 
-            Console.Write( "@" );
- 
             // place pellet in world
             pellet.placePellet(snake, boardH, boardW);
-           
+
             // Create a stopwatch for thread-waiting
             var t = new Stopwatch();
             t.Start();
 
             // Running the game
-            while (runGame) {
-
-
+            while (runGame)
+            {
 
                 // Change direction if key is pressed
                 newDir = gm.ReadKeys(lastDirectionMoved);
                 // Set direction of snake
-                snake.setDirection( newDir );
-              
+                snake.setDirection(newDir);
+
                 // newDir = 5 betyr pause. We are still in alpha
-                if (newDir != 5) {
+                if (newDir != 5)
+                {
                     // Wait 100 millis
                     if (t.ElapsedMilliseconds < 100)
+                    {
                         continue;
+                    }
                     // Restart counter
                     t.Restart();
 
@@ -71,26 +70,28 @@ namespace SnakeMess{
                     var newHead = snake.getNewHead();
 
                     // Check if snake is eating pellet
-                    if (pellet.checkIfEatingPellet(snake)){
+                    if (pellet.checkIfEatingPellet(snake))
+                    {
                         // Grow snake
                         snake.grow = true;
                         // Place new pellet
                         pellet.placePellet(snake, boardH, boardW);
                     }
-                    
+
                     // Check if snake eats himself, currenty disabled
                     snake.checkSelfCannibalism(gm, newHead);
-	                if (gm.getGameOver())
-	                {
-		                break;
-	                }
+                    if (gm.getGameOver())
+                    {
+                        break;
+                    }
 
 
                     // Update screen
                     screen.updateScreen(snake, pellet, newHead);
-               
+
                     // Update last direction. Shark bois 4ever
                     lastDirectionMoved = newDir;
+
                 }
             }
         }

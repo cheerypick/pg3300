@@ -14,17 +14,14 @@ namespace SnakeMess {
             Console.CursorVisible = false; // Can u see the cursor?
             Console.ForegroundColor = ConsoleColor.Green; // Green colorz 420
             Console.SetCursorPosition(10, 10); // Set start poisition
-            //Console.Write("@");// Write head
         }
 
         // Update screen
         public void updateScreen(Snake snake, pellet pellet, Coord newHead) {
 
-            // Write a "body-0" where head was last update
-            //Console.ForegroundColor = ConsoleColor.Green;
+            // Write over head
             Console.SetCursorPosition(snake.getHead().X, snake.getHead().Y);
             Console.Write("O");
-            
             
             // If snake is not growing, write over tail
             if (!snake.grow) {
@@ -35,7 +32,6 @@ namespace SnakeMess {
 
             // Add new head to snake 
             snake.getCoords().Add(newHead);
-            //Console.ForegroundColor = ConsoleColor.Green;
             Console.SetCursorPosition(newHead.X, newHead.Y);
             Console.Write("@");
 

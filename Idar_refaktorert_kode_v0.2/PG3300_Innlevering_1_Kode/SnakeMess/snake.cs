@@ -6,8 +6,6 @@ using System.Text;
 namespace SnakeMess {
     // TSSSSSSSSSSZZZZZZZZZ
     public class Snake {
-
-
         // Direction
         private int direction;
 
@@ -28,8 +26,7 @@ namespace SnakeMess {
 
         // Setdirection. Catches bad input
         public void setDirection(int newDir) {
-            if(newDir != -1)
-             direction = newDir;
+                direction = newDir;
         }
 
         // Add bodies to snake
@@ -55,15 +52,11 @@ namespace SnakeMess {
         }
 
         // Check if snake has sniffed fuel
-        public void checkSelfCannibalism(GameMaster gm, Coord newHead) {
-
-            foreach (Coord x in getCoords())
-                if (x.X == newHead.X && x.Y == newHead.Y) {
-                    // Death by accidental self-cannibalism.
-                    gm.setGameOver(true);
-                    break;
-                }
-
+        public void checkSelfCannibalism(GameMaster gm, Coord newHead)
+        {
+            if (getCoords().Any(x => x.X == newHead.X && x.Y == newHead.Y)){
+                gm.setGameOver(true);
+            }
         }
 
         // Method for adding new head to the right side and direction of snake
@@ -76,23 +69,23 @@ namespace SnakeMess {
             // Where head is created is decided by direction
             switch (direction) {
                 case 0:
-                    newHead.Y -= 1;
+                    newHead.Y -= 1; // Move down
                     break;
                 case 1:
-                    newHead.X += 1;
+                    newHead.X += 1; // Right
                     break;
                 case 2:
-                    newHead.Y += 1;
+                    newHead.Y += 1; // Up
                     break;
-                // case 3:
-                default:
-                    newHead.X -= 1;
+                case 3: 
+                    newHead.X -= 1; // Left
                     break;
             }
-
             return newHead;
 
         }
+
+
 
         // Check if head is colliding
         public bool checkBoardCollision(int boardH, int boardW) {
