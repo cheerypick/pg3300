@@ -52,6 +52,8 @@ namespace SnakeMess{
             // Running the game
             while (runGame) {
 
+
+
                 // Change direction if key is pressed
                 newDir = gm.ReadKeys(lastDirectionMoved);
                 // Set direction of snake
@@ -78,7 +80,12 @@ namespace SnakeMess{
                     
                     // Check if snake eats himself, currenty disabled
                     snake.checkSelfCannibalism(gm, newHead);
-                   
+	                if (gm.getGameOver())
+	                {
+		                break;
+	                }
+
+
                     // Update screen
                     screen.updateScreen(snake, pellet, newHead);
                

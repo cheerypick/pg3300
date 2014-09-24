@@ -19,3 +19,8 @@ E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.exe
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.pdb
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\Idar_refaktorert_kode_v0.2\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.exe
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\Idar_refaktorert_kode_v0.2\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.pdb
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\Idar_refaktorert_kode_v0.2\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\Idar_refaktorert_kode_v0.2\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\Idar_refaktorert_kode_v0.2\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.pdb

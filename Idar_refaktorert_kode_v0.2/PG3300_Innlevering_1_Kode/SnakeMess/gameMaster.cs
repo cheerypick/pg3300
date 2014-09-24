@@ -26,16 +26,25 @@ namespace SnakeMess
                 case ConsoleKey.Spacebar:
                     return 5;
                 case ConsoleKey.UpArrow: // 0
-                    return lastDirection != 2 ? 0 : lastDirection;
+                    if(lastDirection != 2)
+                        return 0;
+                    return lastDirection;
 
                 case ConsoleKey.RightArrow: // 1
-                    return lastDirection != 3 ? 1 : lastDirection;
+                    if(lastDirection != 3)
+                        return 1;
+                    return lastDirection;
 
                 case ConsoleKey.DownArrow: // 2
-                    return lastDirection != 0 ? 2 : lastDirection;
+                    if(lastDirection != 0)
+                        return 2;
+                    return lastDirection;
 
                 case ConsoleKey.LeftArrow: // 3
-                    return lastDirection != 1 ? 3 : lastDirection;
+                    if(lastDirection != 1)
+                        return 3;
+                    return lastDirection;
+
                 default:
                     return lastDirection;
 
@@ -45,9 +54,16 @@ namespace SnakeMess
 
         // Set game over
         public void setGameOver(Boolean gameState){
-            gameOver = gameState;
+            this.gameOver = gameState;
             //Environment.Exit(1); // FOR EXITING GAME
         }
+
+	    public bool getGameOver()
+	    {
+		    return gameOver;
+	    }
+	    
+
     }
  }
 
