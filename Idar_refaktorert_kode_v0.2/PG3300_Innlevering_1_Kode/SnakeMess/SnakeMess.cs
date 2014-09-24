@@ -85,6 +85,12 @@ namespace SnakeMess{
                         break;
                     }
 
+					// Kræsjer i boarder
+					if (snake.getHead().X <= 0 || snake.getHead().X >= boardW - 1 ||
+						snake.getHead().Y <= 0 || snake.getHead().Y >= boardH - 1)
+					{
+						break;
+					}
 
                     // Update screen
                     screen.updateScreen(snake, pellet, newHead);
