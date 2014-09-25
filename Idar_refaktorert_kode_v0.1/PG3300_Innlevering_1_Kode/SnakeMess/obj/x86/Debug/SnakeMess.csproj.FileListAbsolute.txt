@@ -19,3 +19,5 @@ E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.exe
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode\SnakeMess\bin\Debug\SnakeMess.pdb
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+\\psf\Home\pg3300\Idar_refaktorert_kode_v0.1\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+\\psf\Home\pg3300\Idar_refaktorert_kode_v0.1\PG3300_Innlevering_1_Kode\SnakeMess\obj\x86\Debug\SnakeMess.pdb

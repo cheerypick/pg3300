@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 
 
-// HHEEEEEEIIIIII!!!!! DETERKATRNEHER
+
 // WARNING: DO NOT code like this. Please. EVER! 
 //          "Aaaargh!" 
 //          "My eyes bleed!" 
@@ -50,7 +50,6 @@ namespace SnakeMess
 			var app = new Position();
 			var snake = new List<Position>
 			{
-				
 				new Position(10, 10),
 				new Position(10, 10),
 				new Position(10, 10),
@@ -73,6 +72,7 @@ namespace SnakeMess
 					break;
 				}
 			}
+
 			var timer = new Stopwatch();
 			timer.Start();
 			while (!gameOver)
@@ -80,6 +80,10 @@ namespace SnakeMess
 				if (Console.KeyAvailable)
 				{
 					ConsoleKeyInfo consoleKeyInfo = Console.ReadKey(true);
+					
+					{
+							
+					}
 					if (consoleKeyInfo.Key == ConsoleKey.Escape)
 						gameOver = true;
 					else if (consoleKeyInfo.Key == ConsoleKey.Spacebar)
@@ -91,7 +95,7 @@ namespace SnakeMess
 					else if (consoleKeyInfo.Key == ConsoleKey.DownArrow && last != 0)
 						newDirection = 2;
 					else if (consoleKeyInfo.Key == ConsoleKey.LeftArrow && last != 1)
-						newDirection = 3;
+						newDirection = 3; 
 				}
 				if (!pause)
 				{
@@ -100,28 +104,28 @@ namespace SnakeMess
 					timer.Restart();
 					var tail = new Position(snake.First());
 					var head = new Position(snake.Last());
-					var newH = new Position(head);
+					var newHead = new Position(head);
 					switch (newDirection)
 					{
 						case 0:
-							newH.Y -= 1;
+							newHead.Y -= 1;
 							break;
 						case 1:
-							newH.X += 1;
+							newHead.X += 1;
 							break;
 						case 2:
-							newH.Y += 1;
+							newHead.Y += 1;
 							break;
 						case 3:
 						default:
-							newH.X -= 1;
+							newHead.X -= 1;
 							break;
 					}
-					if (newH.X < 0 || newH.X >= boardWidth)
+					if (newHead.X < 0 || newHead.X >= boardWidth)
 						gameOver = true;
-					else if (newH.Y < 0 || newH.Y >= boardHeight)
+					else if (newHead.Y < 0 || newHead.Y >= boardHeight)
 						gameOver = true;
-					if (newH.X == app.X && newH.Y == app.Y)
+					if (newHead.X == app.X && newHead.Y == app.Y)
 					{
 						if (snake.Count + 1 >= boardWidth*boardHeight)
 							// No more room to place apples -- game over.
@@ -151,7 +155,7 @@ namespace SnakeMess
 					{
 						snake.RemoveAt(0);
 						foreach (Position x in snake)
-							if (x.X == newH.X && x.Y == newH.Y)
+							if (x.X == newHead.X && x.Y == newHead.Y)
 							{
 								// Death by accidental self-cannibalism.
 								gameOver = true;
@@ -175,9 +179,9 @@ namespace SnakeMess
 							Console.Write("$");
 							inUse = false;
 						}
-						snake.Add(newH);
+						snake.Add(newHead);
 						Console.ForegroundColor = ConsoleColor.Green;
-						Console.SetCursorPosition(newH.X, newH.Y);
+						Console.SetCursorPosition(newHead.X, newHead.Y);
 						Console.Write("@");
 						last = newDirection;
 					}
