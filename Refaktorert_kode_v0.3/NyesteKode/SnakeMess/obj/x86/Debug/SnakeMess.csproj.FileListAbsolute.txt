@@ -34,3 +34,5 @@ D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering
 D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\NyesteKode\SnakeMess\bin\Debug\SnakeMess.exe
 D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\NyesteKode\SnakeMess\bin\Debug\SnakeMess.pdb
 D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\PG3300_Innlevering1_TekstOgKode\Git kode\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Repository_GIT\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Repository_GIT\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.pdb
