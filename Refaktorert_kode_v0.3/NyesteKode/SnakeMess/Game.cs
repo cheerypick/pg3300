@@ -34,7 +34,14 @@ namespace SnakeMess
             // Finn ut mer!
 
 
-            // Tømmer skjermen før teksten kommer
+
+			/*			Fiks til Relative Path!!		*/
+			// Kilder:
+			//http://msdn.microsoft.com/en-us/library/8bh11f1k.aspx
+			System.IO.File.WriteAllText(@"D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\SmartGit\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\score.txt", "asdf");
+
+
+	        // Tømmer skjermen før teksten kommer
             Console.Clear();
             // Setter utgangspunk for teksten som skal komme
             Console.SetCursorPosition(1, 1);
