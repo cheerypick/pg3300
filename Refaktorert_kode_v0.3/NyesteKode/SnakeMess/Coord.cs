@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SnakeMess {
     // Easy
-    // GHALALØ
+    // HJALMAR HJILLHJOLL
         public class Coord {
 
         public int X;
