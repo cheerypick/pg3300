@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Coord.cs" />
     <Compile Include="Direction.cs" />
-    <Compile Include="Game.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="gameMaster.cs" />
     <Compile Include="pellet.cs" />
     <Compile Include="screenController.cs" />

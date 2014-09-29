@@ -17,6 +17,7 @@ namespace SnakeMess {
         private Stopwatch timer;
         private Boolean runGame;
         private Coord newHead;
+	    private Command lastCommand;
 
 
         public SnakeGame() {
@@ -60,7 +61,7 @@ namespace SnakeMess {
             // Running the game
             while (runGame) {
                 // Change direction if key is pressed
-                newDir = gm.ReadKeys(lastDirectionMoved);
+                newDir = (int)gm.ReadKeys(lastCommand);
                 // Set direction of snake
                 snake.setDirection(newDir);
 
@@ -87,7 +88,7 @@ namespace SnakeMess {
                     screen.updateScreen(snake, pellet, newHead);
 
                     // Update last direction. Shark bois 4ever
-                    lastDirectionMoved = newDir;
+                    lastCommand = (Command)newDir;
 
                 }
             }

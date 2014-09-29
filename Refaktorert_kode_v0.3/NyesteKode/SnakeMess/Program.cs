@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace SnakeMess
 {
-    internal class Game
+     class Program
     {
         public static void Main(string[] arguments)
         {
@@ -35,10 +35,8 @@ namespace SnakeMess
 
 
 
-			/*			Fiks til Relative Path!!		*/
-			// Kilder:
-			//http://msdn.microsoft.com/en-us/library/8bh11f1k.aspx
-			System.IO.File.WriteAllText(@"D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\SmartGit\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\score.txt", "asdf");
+			
+			System.IO.File.WriteAllText(@"score.txt", "asdf");
 
 
 	        // Tømmer skjermen før teksten kommer
