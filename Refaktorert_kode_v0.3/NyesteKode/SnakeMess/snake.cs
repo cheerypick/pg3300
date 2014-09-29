@@ -52,11 +52,8 @@ namespace SnakeMess {
         }
 
         // Check if snake has sniffed fuel
-        public void checkSelfCannibalism(GameMaster gm, Coord newHead)
-        {
-            if (getCoords().Any(x => x.X == newHead.X && x.Y == newHead.Y)){
-                gm.setGameOver(true);
-            }
+        public Boolean CheckSelfCannibalism(GameMaster gm, Coord newHead) {
+            return getCoords().Any(x => x.X == newHead.X && x.Y == newHead.Y);
         }
 
         // Method for adding new head to the right side and direction of snake

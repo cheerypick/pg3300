@@ -11,8 +11,8 @@ namespace SnakeMess {
 
         // Method for preparing
         public void writeStartUp() {
-            Console.CursorVisible = false; // Can u see the cursor?
-            Console.ForegroundColor = ConsoleColor.Green; // Green colorz 420
+            Console.CursorVisible = false; // Dont want to see the cursor
+            Console.ForegroundColor = ConsoleColor.Green; // Console color
             Console.SetCursorPosition(10, 10); // Set start poisition
         }
 

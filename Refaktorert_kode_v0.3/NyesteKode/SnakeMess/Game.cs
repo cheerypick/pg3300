@@ -14,18 +14,21 @@ namespace SnakeMess
     {
         public static void Main(string[] arguments)
         {
+
             // Oppretter et object av spillet.
-            SnakeGame snake = new SnakeGame();
+           
             // Starter det første spillet
+           
+            var snake = new SnakeGame();
             snake.RunGame();
             GameMenu(snake);
+            
 
-        }
+
+    }
 
         // Metoden som snakker til bruker. Spør om han vil spille på nytt ect.
-        public static void GameMenu(SnakeGame snake)
-        {
-
+        public static void GameMenu(SnakeGame snake){
             // Skal skrive ut til fil når det blir gameover
 
             // Finn ut mer!
@@ -41,11 +44,13 @@ namespace SnakeMess
 
             // Tar imot input, og gjør det bruker sier.
             string input = Console.ReadLine();
-            if (input.Equals("y"))
-            {
+            if (input.Equals("y")) { 
+                 Console.Clear();
                 // Må resette score for hver runde.
+                snake = new SnakeGame();
+                
                 SnakeGame.ShowScore = 0;
-                Console.Clear();
+                
                 snake.RunGame();
                 GameMenu(snake);
             }

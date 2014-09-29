@@ -16,6 +16,7 @@ namespace SnakeMess {
         private pellet pellet;
         private Stopwatch timer;
         private Boolean runGame;
+        private Coord newHead;
 
 
         public SnakeGame() {
@@ -36,7 +37,7 @@ namespace SnakeMess {
             // Create snake
             snake = new Snake();
 
-            // And pellet (Katrine: food)
+            // Create pellet
             pellet = new pellet(0, 0);
 
             // Add 4 bodies to snake
@@ -49,10 +50,11 @@ namespace SnakeMess {
             timer = new Stopwatch();
             timer.Start();
         }
+
         // Skal være static method
         public static int ShowScore { get; set; }
 
-        StreamWriter writer = new StreamWriter("test.txt");
+       // StreamWriter writer = new StreamWriter("test.txt");
         public void RunGame() {
 
             // Running the game
@@ -72,32 +74,16 @@ namespace SnakeMess {
                     timer.Restart();
 
                     // Get new snakehead
-                    var newHead = snake.getNewHead();
+                    newHead = snake.getNewHead();
 
                     // Check if snake is eating pellet
-                    if (pellet.checkIfEatingPellet(snake)) {
-                        ShowScore++;
-                        // Grow snake
-                        snake.grow = true;
-                        // Place new pellet
-                        pellet.placePellet(snake, boardH, boardW);
-                    }
+                    checkIfEatingPellet();
 
-                    // Check if snake eats himself, currenty disabled
-                    snake.checkSelfCannibalism(gm, newHead);
-                    if (gm.getGameOver()) {
-                        break;
-                    }
-
-                    // Kræsjer i boarder
-                    /*if (snake.getHead().X <= 0 || snake.getHead().X >= boardW - 1 ||
-                        snake.getHead().Y <= 0 || snake.getHead().Y >= boardH - 1)
-                    {
-                        break;
-                    }*/
-                    runGame = snake.checkBoardCollision(boardH, boardW);
+                    // Check if snake is crashing in border
+                    if (checkIfBorderCrash() || snake.CheckSelfCannibalism(gm, newHead)) break;
 
                     // Update screen
+
                     screen.updateScreen(snake, pellet, newHead);
 
                     // Update last direction. Shark bois 4ever
@@ -106,7 +92,21 @@ namespace SnakeMess {
                 }
             }
         }
+
+        public bool checkIfBorderCrash()
+        {
+            return snake.getHead().X <= 0 || snake.getHead().X >= boardW - 1 ||
+                   snake.getHead().Y <= 0 || snake.getHead().Y >= boardH - 1;
+        }
+
+        public void checkIfEatingPellet()
+        {
+            if (!pellet.checkIfEatingPellet(snake)) return;
+            ShowScore++;
+            // Grow snake
+            snake.grow = true;
+            // Place new pellet
+            pellet.placePellet(snake, boardH, boardW);
+        }
     }
 }
-
-
