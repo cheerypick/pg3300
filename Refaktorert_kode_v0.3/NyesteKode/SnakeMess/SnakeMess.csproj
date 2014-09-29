@@ -50,7 +50,7 @@
     <Compile Include="pellet.cs" />
     <Compile Include="screenController.cs" />
     <Compile Include="snake.cs" />
-    <Compile Include="SnakeMess.cs" />
+    <Compile Include="SnakeGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

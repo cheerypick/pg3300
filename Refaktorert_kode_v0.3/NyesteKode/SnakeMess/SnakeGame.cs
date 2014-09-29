@@ -6,10 +6,9 @@ using System.Diagnostics;
 
 using System.Threading;
 
-namespace SnakeMess{
+namespace SnakeMess {
 
-    internal class SnakeGame
-    {
+    internal class SnakeGame {
         private screenController screen;
         private GameMaster gm;
         private int lastDirectionMoved, newDir, boardW, boardH;
@@ -19,29 +18,19 @@ namespace SnakeMess{
         private Boolean runGame;
 
 
-	    public SnakeGame() {
-			ShowScore = 0;
-	    }
-		// Skal være static method
-		public static int ShowScore { get; set; }
-
-		StreamWriter writer = new StreamWriter("test.txt");
-		public void RunGame(){
-
-	         // Boolean for running the game
-             runGame = true;
-
-            // Direction of movement
-           // newDir = 1; // 0 = up, 1 = right, 2 = down, 3 = left
+        public SnakeGame() {
+            ShowScore = 0;
+            // Boolean for running the game
+            runGame = true;
 
             // Gamemaster
-             gm = new GameMaster();
+            gm = new GameMaster();
 
             // Screen (output handler)
             screen = new screenController();
 
             // Get width and height from screen handler
-		    boardW = screen.getWidth();
+            boardW = screen.getWidth();
             boardH = screen.getHeight();
 
             // Create snake
@@ -59,20 +48,24 @@ namespace SnakeMess{
             // Create a stopwatch for thread-waiting
             timer = new Stopwatch();
             timer.Start();
+        }
+        // Skal være static method
+        public static int ShowScore { get; set; }
+
+        StreamWriter writer = new StreamWriter("test.txt");
+        public void RunGame() {
 
             // Running the game
-            while (runGame){
+            while (runGame) {
                 // Change direction if key is pressed
                 newDir = gm.ReadKeys(lastDirectionMoved);
                 // Set direction of snake
                 snake.setDirection(newDir);
 
                 // newDir = 5 betyr pause. We are still in alpha
-                if (newDir != 5)
-                {
+                if (newDir != 5) {
                     // Wait 100 millis
-                    if (timer.ElapsedMilliseconds < 100)
-                    {
+                    if (timer.ElapsedMilliseconds < 100) {
                         continue;
                     }
                     // Restart counter
@@ -82,9 +75,8 @@ namespace SnakeMess{
                     var newHead = snake.getNewHead();
 
                     // Check if snake is eating pellet
-                    if (pellet.checkIfEatingPellet(snake))
-                    {
-	                    ShowScore++;
+                    if (pellet.checkIfEatingPellet(snake)) {
+                        ShowScore++;
                         // Grow snake
                         snake.grow = true;
                         // Place new pellet
@@ -93,17 +85,16 @@ namespace SnakeMess{
 
                     // Check if snake eats himself, currenty disabled
                     snake.checkSelfCannibalism(gm, newHead);
-                    if (gm.getGameOver())
-                    {
+                    if (gm.getGameOver()) {
                         break;
                     }
 
-					// Kræsjer i boarder
-					/*if (snake.getHead().X <= 0 || snake.getHead().X >= boardW - 1 ||
-						snake.getHead().Y <= 0 || snake.getHead().Y >= boardH - 1)
-					{
-						break;
-					}*/
+                    // Kræsjer i boarder
+                    /*if (snake.getHead().X <= 0 || snake.getHead().X >= boardW - 1 ||
+                        snake.getHead().Y <= 0 || snake.getHead().Y >= boardH - 1)
+                    {
+                        break;
+                    }*/
                     runGame = snake.checkBoardCollision(boardH, boardW);
 
                     // Update screen
@@ -117,5 +108,5 @@ namespace SnakeMess{
         }
     }
 }
-		
-	
+
+

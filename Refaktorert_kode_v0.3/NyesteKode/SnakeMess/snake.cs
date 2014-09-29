@@ -89,7 +89,9 @@ namespace SnakeMess {
 
         // Check if head is colliding
         public bool checkBoardCollision(int boardH, int boardW) {
-            return (newHead.X < 0 || newHead.X >= boardW || newHead.Y < 0 || newHead.Y >= boardH);
+            return !(newHead.X < 0 || newHead.X >= boardW || newHead.Y < 0 || newHead.Y >= boardH);
         }
+
+        
     }
 }
