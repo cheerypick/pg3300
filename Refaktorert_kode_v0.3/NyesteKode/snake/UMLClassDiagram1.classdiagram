@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="7a35425a-fcca-453c-a2a4-4207465edbbc" name="UMLClassDiagram1" linkedPackageId="a8b1d0a3-b182-43ab-97e5-21ca81222799" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9cf73c99-e9e7-4e4c-965a-ecf14225bf98">
+      <profileInstance Id="3cacc635-bae2-4973-a4da-4ae51bc3c45b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="19426fbc-d338-48b6-ad91-95e8144a1332">
+      <profileInstance Id="0ca9e340-1a56-45a7-8b29-3a633f9a6d70" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f1d45250-21f5-4a75-9a0f-07e1230989b9" name="Snake" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8212dfc6-34f3-4d10-8877-d29e0283f67e" />
+        <ownedAttributesInternal>
+          <property Id="f9604d29-3aa3-4fab-9c72-138b9d7b15d4" name="direction" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f903dea9-61d7-4b0b-8917-36357279ec21" />
+          </property>
+          <property Id="fe1e767c-a7a4-4ebf-a71e-fbec050aefff" name="body" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4cb09c9b-6937-4974-917f-e6e87a5f7fb2" />
+          </property>
+          <property Id="8bebd140-87b2-4ad1-b376-d1b4356fd22f" name="tail" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d26838f-9987-4c18-b0b7-74869d17afb5" />
+          </property>
+          <property Id="6eafa398-e7d2-484f-908d-2a8af7c2ee38" name="head" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ceddaf38-912a-40db-8cb7-c65c0154b613" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="37dd0be0-c212-4f18-9711-d2385835273c" name="Coord" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f2d09cca-92d5-4477-8468-b0d972401e74" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6a8a1844-ee3c-4cd9-8d3e-3de519dc42fe" name="Pellet" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="54ad601d-c81d-4edf-8285-3c9558ba79fe" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4b8ae76d-f78a-49ae-8d96-a4c7cb43f0c3" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d408849-768a-492e-b11d-8b2bff370605" />
+        <ownedAttributesInternal>
+          <property Id="556eb9b6-a97d-4ba8-81a6-bcdebe41214f" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="895eb95d-f8b1-4a6b-8b95-4a9d7af83d55" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cb4246e3-2165-4c04-8077-5274f9b72a53" name="ScreenController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0c9abb38-826b-4f33-80a7-b947dd91b382" />
+        <targetEnds>
+          <association Id="87cc2c59-7ffb-42f1-a024-a03da90ce773" isDerived="false" sourceEndRoleName="ScreenController" targetEndRoleName="Snake" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f1d45250-21f5-4a75-9a0f-07e1230989b9" LastKnownName="Snake" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88c7855b-3ccc-42b0-9c7d-045eaa96f744" name="ScreenController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0531bd7c-d7a0-4175-aa66-1f9f22132b61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="725c7c11-daf5-4e4c-a636-ec91f23cc118" name="Snake" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01764fea-7379-44c6-9679-110b3df4d35c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a0e1eb36-7077-422a-b1d2-fe635005bcf4" />
+          </association>
+          <association Id="9d3d6a3a-79c0-4752-b2e9-bb4a0d6251e2" isDerived="false" sourceEndRoleName="ScreenController" targetEndRoleName="Coord" isLeaf="false" isAbstract="false">
+            <classMoniker Id="37dd0be0-c212-4f18-9711-d2385835273c" LastKnownName="Coord" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55a842ea-5594-4981-8712-42e721cc909f" name="ScreenController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5e610d45-aec6-466e-9c93-6ea9c6bdcbce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a772d5b-4c88-423e-9209-bfc6bf4f12f0" name="Coord" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0a76925d-8be1-4b2b-8f1f-7c2f146f139f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="702b4f05-55e5-49e5-b1cc-725fc5841beb" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f6da7a23-bc9b-40ca-92c9-7fc1a11c9106" name="GameMaster" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b0182b78-e74b-4f29-84cd-a01e5df39fe2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bb56e5b6-6276-4fb0-921f-08596c5793fd" name="SnakeGame" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3fbb31b4-0ec1-4987-b0cd-1e1ab1b00e6c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a8b1d0a3-b182-43ab-97e5-21ca81222799" name="snake">
+    <elementDefinition Id="9d85bfdd-180b-42d7-92f8-a621d1f4973b" />
+  </package>
+</logicalClassDesignerModel>

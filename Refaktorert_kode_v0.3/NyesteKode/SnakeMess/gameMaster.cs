@@ -31,6 +31,7 @@ namespace SnakeMess
 				case ConsoleKey.Escape: // THIS IS FOR ESCAPE DO NOT REMOVE ME
 					return Command.Escape;;
 				case ConsoleKey.Spacebar:
+					SnakeGame.isPaused = !SnakeGame.isPaused;
 					return Command.Pause;
 				case ConsoleKey.UpArrow: // 0
 					return lastDirection != Command.Up ? Command.Up : lastDirection;

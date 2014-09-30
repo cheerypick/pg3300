@@ -1,7 +1,6 @@
 ﻿namespace SnakeMess
 {
-	// Easy
-	// HJALMAR HJILLHJOLL
+
 	public class Coord
 	{
 		public int X { get; set; }

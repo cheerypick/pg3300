@@ -9,15 +9,16 @@ using System.Threading;
 namespace SnakeMess {
 
     internal class SnakeGame {
-        private screenController screen;
+        private Board screen;
         private GameMaster gm;
         private int lastDirectionMoved, newDir, boardW, boardH;
         private Snake snake;
-        private pellet pellet;
+        private Pellet pellet;
         private Stopwatch timer;
         private Boolean runGame;
         private Coord newHead;
 	    private Command lastCommand;
+	    public static bool isPaused = false;
 
 
         public SnakeGame() {
@@ -29,22 +30,22 @@ namespace SnakeMess {
             gm = new GameMaster();
 
             // Screen (output handler)
-            screen = new screenController();
+            screen = new Board();
 
             // Get width and height from screen handler
-            boardW = screen.getWidth();
-            boardH = screen.getHeight();
+            boardW = screen.GetWidth();
+            boardH = screen.GetHeight();
 
             // Create snake
             snake = new Snake();
 
-            // Create pellet
-            pellet = new pellet(0, 0);
+            // Create Pellet
+            pellet = new Pellet(0, 0);
 
             // Add 4 bodies to snake
-            snake.addBody(4, 10, 10);
+            snake.AddBody(4, 10, 10);
 
-            // place pellet in world
+            // place Pellet in world
             pellet.placePellet(snake, boardH, boardW);
 
             // Create a stopwatch for thread-waiting
@@ -63,10 +64,10 @@ namespace SnakeMess {
                 // Change direction if key is pressed
                 newDir = (int)gm.ReadKeys(lastCommand);
                 // Set direction of snake
-                snake.setDirection(newDir);
+                snake.SetDirection(newDir);
 
                 // newDir = 5 betyr pause. We are still in alpha
-                if (newDir != 5) {
+                if (!isPaused) {
                     // Wait 100 millis
                     if (timer.ElapsedMilliseconds < 100) {
                         continue;
@@ -75,9 +76,9 @@ namespace SnakeMess {
                     timer.Restart();
 
                     // Get new snakehead
-                    newHead = snake.getNewHead();
+                    newHead = snake.GetNewHead();
 
-                    // Check if snake is eating pellet
+                    // Check if snake is eating Pellet
                     checkIfEatingPellet();
 
                     // Check if snake is crashing in border
@@ -96,8 +97,8 @@ namespace SnakeMess {
 
         public bool checkIfBorderCrash()
         {
-            return snake.getHead().X <= 0 || snake.getHead().X >= boardW - 1 ||
-                   snake.getHead().Y <= 0 || snake.getHead().Y >= boardH - 1;
+            return snake.GetHead().X <= 0 || snake.GetHead().X >= boardW - 1 ||
+                   snake.GetHead().Y <= 0 || snake.GetHead().Y >= boardH - 1;
         }
 
         public void checkIfEatingPellet()
@@ -105,8 +106,8 @@ namespace SnakeMess {
             if (!pellet.checkIfEatingPellet(snake)) return;
             ShowScore++;
             // Grow snake
-            snake.grow = true;
-            // Place new pellet
+            snake.Grow = true;
+            // Place new Pellet
             pellet.placePellet(snake, boardH, boardW);
         }
     }

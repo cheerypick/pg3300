@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9d65a2b3-cca3-495f-af57-4c591992afa0" name="UMLUseCaseDiagram1" linkedPackageId="27d7c10b-654a-431a-a9dc-c70a23eaabbe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="0b4161da-94b5-43cd-9a98-1754b998bcc3">
+      <profileInstance Id="a6d7a869-633a-47e7-bcd1-b8c482af82fe" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a7ccb390-0002-4a58-a2aa-1f2151b8f21b">
+      <profileInstance Id="6a8ea0ad-f7f3-4657-91f0-930df57534d2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="89aef2f8-ecca-4ddd-b88b-e8527100da3f" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="212ca4f9-a308-491e-8472-bb9ce7476339" />
+        <targetEnds>
+          <association Id="669083b2-e8d3-4ee5-90e4-a9edf0660ff9" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Plays game" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="846ddf60-50eb-46f0-b4d4-f48256287536" LastKnownName="Plays game" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5775357f-75fd-4c66-8269-8565a2b71b01" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c2d2c649-e872-4298-901f-382e5dad881d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c174e2c2-0dbb-4c81-9dde-08d59e0aa2db" name="Plays game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8fa4dd5-83d5-40a8-8153-3fa71b6021a2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="20cb2d75-c2e6-42b6-8905-c7ac7a40529e" />
+          </association>
+          <association Id="88c64168-b54a-4b83-8dd3-60422d67191b" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f36ed900-d6d1-45df-b911-0d864503b1a8" LastKnownName="Checks HighScore" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23552b50-ffc7-420c-9efe-5cb29a883f55" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4eb60250-c9c2-4dab-8e82-3b53730f6976" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5158ca2-fa76-4985-85ae-fd42acd59c64" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3e46b701-f8f8-4289-bbb6-420dbb095d69" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8d187d8b-3ea8-451d-81d5-3e2597c92805" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="846ddf60-50eb-46f0-b4d4-f48256287536" name="Plays game" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9abbcb54-6d5a-4608-9073-0b3060df2d8a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f36ed900-d6d1-45df-b911-0d864503b1a8" name="Checks HighScore" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cc66afdf-d991-43b8-9c49-a3ecbc27c9ba" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="27d7c10b-654a-431a-a9dc-c70a23eaabbe" name="snake">
+    <elementDefinition Id="9d85bfdd-180b-42d7-92f8-a621d1f4973b" />
+  </package>
+</useCaseModelRoot>

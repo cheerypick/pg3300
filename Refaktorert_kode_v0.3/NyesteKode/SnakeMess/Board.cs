@@ -7,49 +7,49 @@ using System.Diagnostics;
 // This handles output
 
 namespace SnakeMess {
-    internal class screenController {
+    internal class Board {
 
         // Method for preparing
-        public void writeStartUp() {
+        public void InitialState() {
             Console.CursorVisible = false; // Dont want to see the cursor
             Console.ForegroundColor = ConsoleColor.Green; // Console color
             Console.SetCursorPosition(10, 10); // Set start poisition
         }
 
         // Update screen
-        public void updateScreen(Snake snake, pellet pellet, Coord newHead) {
+        public void updateScreen(Snake snake, Pellet pellet, Coord newHead) {
 
             // Write over head
-            Console.SetCursorPosition(snake.getHead().X, snake.getHead().Y);
+            Console.SetCursorPosition(snake.GetHead().X, snake.GetHead().Y);
             Console.Write("O");
             
             // If snake is not growing, write over tail
-            if (!snake.grow) {
-                Console.SetCursorPosition(snake.getTail().X, snake.getTail().Y);
+            if (!snake.Grow) {
+                Console.SetCursorPosition(snake.GetTail().X, snake.GetTail().Y);
                 Console.Write(" ");
-                snake.getCoords().RemoveAt(0);
+                snake.GetCoords().RemoveAt(0);
             }
 
             // Add new head to snake 
-            snake.getCoords().Add(newHead);
+            snake.GetCoords().Add(newHead);
             Console.SetCursorPosition(newHead.X, newHead.Y);
             Console.Write("@");
 
             // dont grow after 1 grow update
-            snake.grow = false;
+            snake.Grow = false;
         }
 
         // smoke some weed
-        public int getHeight() {
+        public int GetHeight() {
             return Console.WindowHeight;
         }
 
         // .. and eat a burga
-        public int getWidth() {
+        public int GetWidth() {
             return Console.WindowWidth;
         }
 
-        public static void drawPellet(Coord coord){
+        public static void DrawPellet(Coord coord){
             Console.ForegroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(coord.X, coord.Y);
             Console.Write("$");

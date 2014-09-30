@@ -33,9 +33,6 @@ namespace SnakeMess
 
             // Finn ut mer!
 
-
-
-			
 			System.IO.File.WriteAllText(@"score.txt", "asdf");
 
 

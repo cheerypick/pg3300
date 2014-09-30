@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 
 namespace SnakeMess {
-    public class pellet {
-        private int X, Y; // Coordinates, these may be removed
-        private Coord pelletCoord; // Real coordinates
+    public class Pellet {
+	    private int X { get; set; }
+	    private int Y { get; set; }
+     
+        private Coord pelletCoord; 
 
         // Constructor
-        public pellet(int x, int y) {
+        public Pellet(int x, int y) {
             X = x;
             Y = y;
             pelletCoord = new Coord(x, y);
@@ -17,7 +19,7 @@ namespace SnakeMess {
 
         // Check if snake is eating pellet
         public Boolean checkIfEatingPellet(Snake snake) {
-            return (snake.getNewHead().X == pelletCoord.X && snake.getNewHead().Y == pelletCoord.Y);
+            return (snake.GetNewHead().X == pelletCoord.X && snake.GetNewHead().Y == pelletCoord.Y);
         }
 
 
@@ -31,11 +33,11 @@ namespace SnakeMess {
                 Y = random.Next(0, boardH);
 
                 // This made itself, rofl, idk. Kinda makes sense
-                var foundSpot = snake.getCoords().All(coord => X != coord.X || Y != coord.Y);
+                var foundSpot = snake.GetCoords().All(coord => X != coord.X || Y != coord.Y);
 
                 // Place if spot is safe, place pellet
                 if (foundSpot) {
-                    screenController.drawPellet(new Coord(X,Y));
+                    Board.DrawPellet(new Coord(X,Y));
                     pelletCoord = new Coord(X, Y);
                     break;
                 }
