@@ -56,14 +56,15 @@ namespace SnakeMess {
             Console.ForegroundColor = ConsoleColor.Green;
         }
 
-        public static void DrawMenu(){
+        public static void DrawMenu(int showScore){
             // Tømmer skjermen før teksten kommer
             Console.Clear();
             // Setter utgangspunk for teksten som skal komme
             Console.SetCursorPosition(1, 1);
             // Skriver ut highscore og litt tekst
-            Console.Write("\tHighScore: " + Game.LastHighscore + "\n");
-            Console.Write("\tYou lost lol\n\n\tTry again? y/n\n\n\t");
+			Console.Write("\tHighScore: " + Game.LastHighscore);
+            Console.Write("\tScore: " + showScore  + "\n\n");
+            Console.Write("\tGame Over\n\n\tTry again? y/n\n\n\t");
         }
 
         public void DrawScore(int showScore)
@@ -71,7 +72,7 @@ namespace SnakeMess {
             // Viser score på skjermen
             Console.SetCursorPosition(1, 1);
             // Skriver ut highscore og litt tekst
-            Console.Write("HighScore: " + Game.LastHighscore + "\t\tScore: " + showScore);
+            Console.Write("\tHighScore: " + Game.LastHighscore + "\t\tScore: " + showScore);
         }
     }
 }

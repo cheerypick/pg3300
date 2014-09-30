@@ -42,7 +42,7 @@ namespace SnakeMess{
                 LastHighscore = SnakeGame.ShowScore;
             }
 
-            ScreenHandler.DrawMenu();
+            ScreenHandler.DrawMenu(SnakeGame.ShowScore);
 
             // Tar imot input, og gjør det bruker sier.
             String input = Console.ReadLine();
@@ -51,11 +51,17 @@ namespace SnakeMess{
                 // Må resette score for hver runde.
                 SnakeGame.ShowScore = 0;
                 return true;
-            }
-
-            Console.Write("\n\tbb");
-            Console.ReadKey(true);
-            return false;
+			}
+	        if (input != null && input.Equals("n"))
+	        {
+				Console.Clear();
+		        Console.Write("\n\n\tHave a nice day buddy!");
+		        Console.ReadKey(true);
+		        return false;
+	        }
+	        Console.Write("y = yes, n = no");
+	        GameMenu(snake);
+	        return false;
         }
     }
 }
