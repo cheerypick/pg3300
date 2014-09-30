@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
@@ -8,6 +9,9 @@ using System.Diagnostics;
 
 namespace SnakeMess {
     internal class ScreenHandler {
+		// Lag property
+		private static int _lastHighscore;
+		public static int LastHighscore { get { return _lastHighscore; } set { _lastHighscore = value; } }
 
         // Method for preparing
         public void WriteStartUp() {
@@ -62,7 +66,7 @@ namespace SnakeMess {
             // Setter utgangspunk for teksten som skal komme
             Console.SetCursorPosition(1, 1);
             // Skriver ut highscore og litt tekst
-			Console.Write("\tHighScore: " + Game.LastHighscore);
+			Console.Write("\tHighScore: " + LastHighscore);
             Console.Write("\tScore: " + showScore  + "\n\n");
             Console.Write("\tGame Over\n\n\tTry again? y/n\n\n\t");
         }
@@ -72,7 +76,44 @@ namespace SnakeMess {
             // Viser score på skjermen
             Console.SetCursorPosition(1, 1);
             // Skriver ut highscore og litt tekst
-            Console.Write("\tHighScore: " + Game.LastHighscore + "\t\tScore: " + showScore);
+            Console.Write("\tHighScore: " + LastHighscore + "\t\tScore: " + showScore);
         }
+
+
+		// Metoden som holder styr på menyen som kommer når det blir Game Over
+		public static bool GameOverMenu(SnakeGame snake)
+		{
+			// Sjekker om forrige highscore er større en nåværende score.
+			if (SnakeGame.ShowScore > LastHighscore)
+			{
+				/*			Fiks til Relative Path!!		*/
+				// Kilder:
+				//http://msdn.microsoft.com/en-us/library/8bh11f1k.aspx
+				File.WriteAllText(@"..\..\score.txt", "" + SnakeGame.ShowScore);
+				LastHighscore = SnakeGame.ShowScore;
+			}
+
+			ScreenHandler.DrawMenu(SnakeGame.ShowScore);
+
+			// Tar imot input, og gjør det bruker sier.
+			String input = Console.ReadLine();
+			if (input != null && input.Equals("y"))
+			{
+				Console.Clear();
+				// Må resette score for hver runde.
+				SnakeGame.ShowScore = 0;
+				return true;
+			}
+			if (input != null && input.Equals("n"))
+			{
+				Console.Clear();
+				Console.Write("\n\n\tHave a nice day buddy!");
+				Console.ReadKey(true);
+				return false;
+			}
+			// Viss du skriver feil (ikke y eller n)
+			GameOverMenu(snake);
+			return true;
+		}
     }
 }
