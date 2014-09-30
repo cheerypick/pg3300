@@ -65,5 +65,13 @@ namespace SnakeMess {
             Console.Write("\tHighScore: " + SnakeGame.ShowScore + "\n");
             Console.Write("\tYou lost lol\n\n\tTry again? y/n\n\n\t");
         }
+
+        public void DrawScore(int showScore)
+        {
+            // Viser score på skjermen
+            Console.SetCursorPosition(1, 1);
+            // Skriver ut highscore og litt tekst
+            Console.Write("HighScore: " + Game.LastHighscore + "\t\tScore: " + showScore);
+        }
     }
 }
