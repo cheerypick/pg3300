@@ -17,9 +17,12 @@ namespace SnakeMess {
         private Stopwatch timer;
         private Boolean runGame;
         private Coord newHead;
+        private Border border;
 
 
         public SnakeGame() {
+            border = new Border();
+            border.write();
             ShowScore = 0;
             // Boolean for running the game
             runGame = true;
@@ -86,7 +89,7 @@ namespace SnakeMess {
                 CheckIfEatingPellet();
 
                 // Check if snake is crashing in border
-                if (CheckIfBorderCrash() || snake.CheckSelfCannibalism(gm, newHead)) break;
+                if (border.checkCollision(newHead) || snake.CheckSelfCannibalism(gm, newHead)) break;
 
                 // Update screen
 
@@ -98,9 +101,12 @@ namespace SnakeMess {
         }
 
         // Check if snake is crashing in borders
-        public bool CheckIfBorderCrash() {
-            return snake.getHead().X <= 0 || snake.getHead().X >= boardW - 1 ||
-                   snake.getHead().Y <= 0 || snake.getHead().Y >= boardH - 1;
+        public bool CheckIfBorderCrash()  {
+            foreach (Coord borderCoord in border.GetBorder())  {
+            if (borderCoord.Equals(newHead)) return true;
+        }
+
+    return false;
         }
 
         // Check is snake is eating pellet/apple

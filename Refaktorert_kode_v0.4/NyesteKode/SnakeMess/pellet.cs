@@ -27,8 +27,8 @@ namespace SnakeMess {
 
             // Try to place in a new spot
             while (true) {
-                X = random.Next(0, boardW);
-                Y = random.Next(0, boardH);
+                X = random.Next(1, boardW - 1);
+                Y = random.Next(4, boardH - 1);
 
                 // This made itself, rofl, idk. Kinda makes sense
                 var foundSpot = snake.getCoords().All(coord => X != coord.X || Y != coord.Y);
