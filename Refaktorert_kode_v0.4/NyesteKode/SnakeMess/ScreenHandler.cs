@@ -9,7 +9,6 @@ using System.Diagnostics;
 
 namespace SnakeMess {
     internal class ScreenHandler  {
-        private Border border;
 
         // Method for preparing
         public void WriteStartUp() {
@@ -73,12 +72,12 @@ namespace SnakeMess {
             // Setter utgangspunk for teksten som skal komme
             Console.SetCursorPosition(1, 1);
             // Skriver ut highscore og litt tekst
+            
 			Console.Write("\tHighScore: " + Game.LastHighscore + "\t\tScore: " + showScore);
             Console.Write("\n\n\tYou lost lol\n\n\tTry again? y/n\n\n\t");
         }
 
-        public void DrawInGameScore(int showScore)
-        {
+        public void DrawInGameScore(int showScore){
             // Viser score på skjermen
             Console.SetCursorPosition(1, 1);
             // Skriver ut highscore og litt tekst
