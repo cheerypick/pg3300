@@ -83,7 +83,7 @@ namespace SnakeMess {
                 // Get new snakehead
                 newHead = snake.GetNewHead();
 
-                screen.DrawScore(ShowScore);
+                screen.DrawInGameScore(ShowScore);
 
                 // Check if snake is eating pellet, do stuff if it is
                 CheckIfEatingPellet();
