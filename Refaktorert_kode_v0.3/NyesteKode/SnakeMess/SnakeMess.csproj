@@ -48,7 +48,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="gameMaster.cs" />
     <Compile Include="pellet.cs" />
-    <Compile Include="screenController.cs" />
+    <Compile Include="ScreenHandler.cs" />
     <Compile Include="snake.cs" />
     <Compile Include="SnakeGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

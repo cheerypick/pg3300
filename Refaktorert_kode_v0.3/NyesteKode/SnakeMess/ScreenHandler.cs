@@ -7,10 +7,10 @@ using System.Diagnostics;
 // This handles output
 
 namespace SnakeMess {
-    internal class screenController {
+    internal class ScreenHandler {
 
         // Method for preparing
-        public void writeStartUp() {
+        public void WriteStartUp() {
             Console.CursorVisible = false; // Dont want to see the cursor
             Console.ForegroundColor = ConsoleColor.Green; // Console color
             Console.SetCursorPosition(10, 10); // Set start poisition
@@ -54,6 +54,16 @@ namespace SnakeMess {
             Console.SetCursorPosition(coord.X, coord.Y);
             Console.Write("$");
             Console.ForegroundColor = ConsoleColor.Green;
+        }
+
+        public static void DrawMenu(){
+            // Tømmer skjermen før teksten kommer
+            Console.Clear();
+            // Setter utgangspunk for teksten som skal komme
+            Console.SetCursorPosition(1, 1);
+            // Skriver ut highscore og litt tekst
+            Console.Write("\tHighScore: " + SnakeGame.ShowScore + "\n");
+            Console.Write("\tYou lost lol\n\n\tTry again? y/n\n\n\t");
         }
     }
 }

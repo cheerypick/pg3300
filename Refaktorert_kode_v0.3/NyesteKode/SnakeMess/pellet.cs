@@ -17,7 +17,7 @@ namespace SnakeMess {
 
         // Check if snake is eating pellet
         public Boolean checkIfEatingPellet(Snake snake) {
-            return (snake.getNewHead().X == pelletCoord.X && snake.getNewHead().Y == pelletCoord.Y);
+            return (snake.GetNewHead().X == pelletCoord.X && snake.GetNewHead().Y == pelletCoord.Y);
         }
 
 
@@ -34,11 +34,10 @@ namespace SnakeMess {
                 var foundSpot = snake.getCoords().All(coord => X != coord.X || Y != coord.Y);
 
                 // Place if spot is safe, place pellet
-                if (foundSpot) {
-                    screenController.drawPellet(new Coord(X,Y));
-                    pelletCoord = new Coord(X, Y);
-                    break;
-                }
+                if (!foundSpot) continue;
+                ScreenHandler.drawPellet(new Coord(X,Y));
+                pelletCoord = new Coord(X, Y);
+                break;
             }
         }
 

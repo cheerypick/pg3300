@@ -57,7 +57,7 @@ namespace SnakeMess {
         }
 
         // Method for adding new head to the right side and direction of snake
-        public Coord getNewHead() {
+        public Coord GetNewHead() {
             // Get head
             head = new Coord(snakeBody.Last());
             // Set new head as head
@@ -85,7 +85,7 @@ namespace SnakeMess {
 
 
         // Check if head is colliding
-        public bool checkBoardCollision(int boardH, int boardW) {
+        public bool CheckBoardCollision(int boardH, int boardW) {
             return !(newHead.X < 0 || newHead.X >= boardW || newHead.Y < 0 || newHead.Y >= boardH);
         }
 
