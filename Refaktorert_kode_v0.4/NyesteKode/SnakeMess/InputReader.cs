@@ -7,14 +7,8 @@ using System.Text;
 namespace SnakeMess
 {
     // Game master is master of gamez
-    public class GameMaster{
+    public class InputReader{
         private ConsoleKeyInfo _inputKey;
-        private Boolean gameOver;
-
-	    public GameMaster()
-	    {
-		    
-	    }
 		
 	    // Method for reading keys
         public int ReadKeys(int lastDirection)  {
@@ -48,18 +42,6 @@ namespace SnakeMess
 
                 }
         }
-
-        // Set game over
-        public void setGameOver(Boolean gameState){
-
-            this.gameOver = gameState;
-            //Environment.Exit(1); // FOR EXITING GAME
-        }
-
-	    public bool getGameOver()
-	    {
-		    return gameOver;
-	    }
     }
  }
 

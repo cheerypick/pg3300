@@ -35,7 +35,6 @@ namespace SnakeMess{
         public static bool GameMenu(SnakeGame snake){
             // Sjekker om forrige highscore er større en nåværende score.
             if (SnakeGame.ShowScore > LastHighscore) {
-                /*			Fiks til Relative Path!!		*/
                 // Kilder:
                 //http://msdn.microsoft.com/en-us/library/8bh11f1k.aspx
                 File.WriteAllText(@"..\..\score.txt", "" + SnakeGame.ShowScore);

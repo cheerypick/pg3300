@@ -41,13 +41,7 @@ namespace SnakeMess {
 
         public Boolean checkCollision(Coord newHead)
         {
-            foreach (var borderCoord in border)
-            {
-                if (newHead.X == borderCoord.X && newHead.Y == borderCoord.Y)
-                    return true;
-                
-            }
-            return false;
+            return border.Any(borderCoord => newHead.X == borderCoord.X && newHead.Y == borderCoord.Y);
         }
     }
 }

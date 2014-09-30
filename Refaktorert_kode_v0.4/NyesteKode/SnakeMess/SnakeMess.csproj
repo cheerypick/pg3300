@@ -47,7 +47,7 @@
     <Compile Include="Coord.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="gameMaster.cs" />
+    <Compile Include="InputReader.cs" />
     <Compile Include="pellet.cs" />
     <Compile Include="ScreenHandler.cs" />
     <Compile Include="snake.cs" />

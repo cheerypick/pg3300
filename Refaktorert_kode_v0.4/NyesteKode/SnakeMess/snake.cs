@@ -52,7 +52,7 @@ namespace SnakeMess {
         }
 
         // Check if snake has sniffed fuel
-        public Boolean CheckSelfCannibalism(GameMaster gm, Coord newHead) {
+        public Boolean CheckSelfCannibalism(InputReader gm, Coord newHead) {
             return getCoords().Any(x => x.X == newHead.X && x.Y == newHead.Y);
         }
 
@@ -81,8 +81,6 @@ namespace SnakeMess {
             return newHead;
 
         }
-
-
 
         // Check if head is colliding
         public bool CheckBoardCollision(List<Coord> boardList ) {

@@ -10,7 +10,7 @@ namespace SnakeMess {
 
     internal class SnakeGame {
         private ScreenHandler screen;
-        private GameMaster gm;
+        private InputReader _inputReader;
         private int lastDirectionMoved, newDir, boardW, boardH;
         private Snake snake;
         private pellet pellet;
@@ -28,7 +28,7 @@ namespace SnakeMess {
             runGame = true;
 
             // Gamemaster
-            gm = new GameMaster();
+            _inputReader = new InputReader();
 
             // Screen (output handler)
             screen = new ScreenHandler();
@@ -67,7 +67,7 @@ namespace SnakeMess {
             while (runGame) {
                 
                 // Change direction if key is pressed
-                newDir = gm.ReadKeys(lastDirectionMoved);
+                newDir = _inputReader.ReadKeys(lastDirectionMoved);
                 // Set direction of snake
                 snake.setDirection(newDir);
 
@@ -89,7 +89,7 @@ namespace SnakeMess {
                 CheckIfEatingPellet();
 
                 // Check if snake is crashing in border
-                if (border.checkCollision(newHead) || snake.CheckSelfCannibalism(gm, newHead)) break;
+                if (border.checkCollision(newHead) || snake.CheckSelfCannibalism(_inputReader, newHead)) break;
 
                 // Update screen
 
