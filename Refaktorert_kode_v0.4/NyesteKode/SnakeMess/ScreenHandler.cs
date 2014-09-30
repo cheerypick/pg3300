@@ -62,7 +62,7 @@ namespace SnakeMess {
             // Setter utgangspunk for teksten som skal komme
             Console.SetCursorPosition(1, 1);
             // Skriver ut highscore og litt tekst
-            Console.Write("\tHighScore: " + SnakeGame.ShowScore + "\n");
+            Console.Write("\tHighScore: " + Game.LastHighscore + "\n");
             Console.Write("\tYou lost lol\n\n\tTry again? y/n\n\n\t");
         }
 

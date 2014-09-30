@@ -14,7 +14,8 @@ namespace SnakeMess{
 
         private static string GetHighscoreFromFile;
         // Lag property
-        public static int LastHighscore;
+        private static int _lastHighscore;
+        public static int LastHighscore{get { return _lastHighscore; } set { _lastHighscore = value; }}
         public static void Main(string[] arguments) {
            Boolean runGame = true;
            GetHighscoreFromFile = File.ReadAllText(@"..\..\score.txt");
