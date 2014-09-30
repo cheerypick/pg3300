@@ -19,7 +19,7 @@ namespace SnakeMess{
             while (runGame)  {
                 var snake = new SnakeGame();
                 snake.RunGame();
-                runGame = ScreenHandler.GameOverMenu(snake);
+                runGame = Menu.GameOverMenu(snake);
             }
 
         }
