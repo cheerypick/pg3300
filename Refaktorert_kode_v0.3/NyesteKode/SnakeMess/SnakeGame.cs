@@ -59,6 +59,16 @@ namespace SnakeMess {
 
             // Running the game
             while (runGame) {
+
+				/*		Rydd opp. Bør kanskje ikke være i denne klassen? Kanskje i en meny klasse?		*/
+				// Viser score på skjermen
+				Console.SetCursorPosition(1, 1);
+				// Skriver ut highscore og litt tekst
+				Console.Write("HighScore: " + Game.LastHighscore +  "\t\tScore: " + ShowScore);
+
+
+
+
                 // Change direction if key is pressed
                 newDir = gm.ReadKeys(lastDirectionMoved);
                 // Set direction of snake
