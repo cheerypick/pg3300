@@ -51,3 +51,5 @@ D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\pg3300\pg3300\2\Re
 D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\pg3300\pg3300\2\Refaktorert_kode_v0.4\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
 D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\pg3300\pg3300\2\Refaktorert_kode_v0.4\NyesteKode\SnakeMess\bin\Debug\SnakeMess.exe
 D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\pg3300\pg3300\2\Refaktorert_kode_v0.4\NyesteKode\SnakeMess\bin\Debug\SnakeMess.pdb
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\pg3300\Kopi\2\Refaktorert_kode_v0.4\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\pg3300\Kopi\2\Refaktorert_kode_v0.4\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.pdb

@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Border.cs" />
     <Compile Include="Coord.cs" />
-    <Compile Include="Direction.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="NewHead.cs" />
     <Compile Include="InputReader.cs" />

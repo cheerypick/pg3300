@@ -1,11 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace SnakeMess {
     class Menu {
+
+
+		/*		Menyen før gamet starter		*/
+	    public static void GameStartMenu()
+	    {
+		    Console.Clear();
+			Console.Write("\n\t\t*********** Snake spill of Doom ********\n\t\tSpille lol?\n\n\t\t");
+		    string input = Console.ReadLine();
+		    if (input != null && input.Equals("y"))
+		    {
+			    Console.Clear();
+		    }
+			else if (input != null && input.Equals("n"))
+			{
+				Game.runGame = false;
+			}
+			else
+		    {
+			    GameStartMenu();
+		    }
+		    
+	    }
+
        
 		/*		Score og Game Over meny		*/
 
@@ -22,7 +42,7 @@ namespace SnakeMess {
 		public static bool GameOverMenu(GameEngine snake)
 		{
 			// Sjekker først om det ble ny highscore
-			checkForHighScore();
+			CheckForHighScore();
 
 			// Tegner menyen som kommer når det er gameover
 			DrawGameOverMenu(GameEngine.ShowScore);
@@ -62,7 +82,7 @@ namespace SnakeMess {
 		}
 
 		/*		HighScore		*/
-		private static void checkForHighScore()
+		private static void CheckForHighScore()
 		{
 			// Sjekker om forrige highscore er større en nåværende score.
 			// Om nåværende score er høyere, så vil den erstatte highscore
