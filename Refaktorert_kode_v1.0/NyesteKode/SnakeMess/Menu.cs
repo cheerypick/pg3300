@@ -6,21 +6,17 @@ namespace SnakeMess {
 
 
 		/*		Menyen før gamet starter		*/
-	    public static void GameStartMenu()
-	    {
-		    Console.Clear();
+	    public static void GameStartMenu() {
+		    
 			Console.Write("\n\t\t*********** Snake spill of Doom ********\n\t\tSpille lol?\n\n\t\t");
-		    string input = Console.ReadLine();
-		    if (input != null && input.Equals("y"))
-		    {
-			    Console.Clear();
-		    }
-			else if (input != null && input.Equals("n"))
-			{
+		    String input = Console.ReadLine();
+            Console.Clear();
+		    
+			 if (input != null && input.Equals("n")){
 				Game.runGame = false;
 			}
-			else
-		    {
+             else if (input == null && !input.Equals("y")) {
+                
 			    GameStartMenu();
 		    }
 		    
@@ -30,8 +26,7 @@ namespace SnakeMess {
 		/*		Score og Game Over meny		*/
 
 		// Score som blir vist in-game
-		public static void DrawInGameScore(int showScore)
-		{
+		public static void DrawInGameScore(int showScore){
 			// Viser score på skjermen
 			Console.SetCursorPosition(1, 1);
 			// Skriver ut highscore og litt tekst
