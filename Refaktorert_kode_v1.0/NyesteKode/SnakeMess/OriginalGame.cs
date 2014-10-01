@@ -1,8 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SnakeMess {
 
@@ -11,7 +7,7 @@ namespace SnakeMess {
         private InputReader _inputReader;
         private int lastDirectionMoved, newDir, boardW, boardH;
         private Snake snake;
-        private pellet pellet;
+        private Pellet pellet;
         private System.Diagnostics.Stopwatch timer;
         private Boolean runGame;
         private Coord newHead;
@@ -26,20 +22,20 @@ namespace SnakeMess {
             screen = new ScreenHandler();
 
             // Get width and height from screen handler
-            boardW = screen.getWidth();
+            boardW = screen.GetWidth();
             boardH = screen.getHeight();
 
             // Create snake
             snake = new Snake();
 
             // Create pellet
-            pellet = new pellet(0, 0);
+            pellet = new Pellet(0, 0);
 
             // Add 4 bodies to snake
             snake.addBody(4, 10, 10);
 
             // place pellet in world
-            pellet.placePellet(snake, boardH, boardW);
+            pellet.PlacePellet(snake, boardH, boardW);
 
             // Create a stopwatch for thread-waiting
             timer = new System.Diagnostics.Stopwatch();
@@ -72,7 +68,7 @@ namespace SnakeMess {
 
                 // Update screen
 
-                screen.updateScreen(snake, pellet, newHead);
+                screen.UpdateScreen(snake, pellet, newHead);
 
                 // Update last direction. Shark bois 4ever
                 lastDirectionMoved = newDir;
@@ -86,11 +82,11 @@ namespace SnakeMess {
          }
 
          public void CheckIfEatingPellet() {
-             if (!pellet.checkIfEatingPellet(snake)) return;
+             if (!pellet.CheckIfEatingPellet(snake)) return;
              // Grow snake
              snake.grow = true;
              // Place new pellet
-             pellet.placePellet(snake, boardH, boardW);
+             pellet.PlacePellet(snake, boardH, boardW);
          }
     }
 }

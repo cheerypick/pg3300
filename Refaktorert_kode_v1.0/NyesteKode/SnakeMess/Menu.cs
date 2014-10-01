@@ -13,7 +13,7 @@ namespace SnakeMess {
             Console.Clear();
 		    
 			 if (input != null && input.Equals("n")){
-				Game.runGame = false;
+				Game.RunGame = false;
 			}
              else if (input == null && !input.Equals("y")) {
                 
