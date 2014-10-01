@@ -31,11 +31,11 @@ namespace SnakeMess {
 		/*		Score og Game Over meny		*/
 
 		// Score som blir vist in-game
-		public static void DrawInGameScore(int showScore){
+		public static void DrawInGameScore(int showScore, int level){
 			// Viser score på skjermen
 			Console.SetCursorPosition(1, 1);
 			// Skriver ut highscore og litt tekst
-			Console.Write("\tHighScore: " + Game.LastHighscore + "\t\tScore: " + showScore);
+			Console.Write("\tHighScore: {0}\t\tScore: {1}\t\tLevel: {2}", Game.LastHighscore, showScore, level);
 		}
 
 		// Menyen som kommer når det blir gameover
@@ -45,7 +45,7 @@ namespace SnakeMess {
 			CheckForHighScore();
 
 			// Tegner menyen som kommer når det er gameover
-			DrawGameOverMenu(GameEngine.ShowScore);
+			DrawGameOverMenu(GameEngine.Score);
 
 			// Tar imot input, og gjør det bruker sier.
 			String input = Console.ReadLine();
@@ -53,7 +53,7 @@ namespace SnakeMess {
 			{
 				Console.Clear();
 				// Må resette score for hver runde.
-				GameEngine.ShowScore = 0;
+				GameEngine.Score = 0;
 				return true;
 			}
 			if (input != null && input.Equals("n"))
@@ -86,12 +86,12 @@ namespace SnakeMess {
 		{
 			// Sjekker om forrige highscore er større en nåværende score.
 			// Om nåværende score er høyere, så vil den erstatte highscore
-			if (GameEngine.ShowScore > Game.LastHighscore)
+			if (GameEngine.Score > Game.LastHighscore)
 			{
 				// Kilder:
 				//http://msdn.microsoft.com/en-us/library/8bh11f1k.aspx
-				File.WriteAllText(@"..\..\score.txt", "" + GameEngine.ShowScore);
-				Game.LastHighscore = GameEngine.ShowScore;
+				File.WriteAllText(@"..\..\score.txt", "" + GameEngine.Score);
+				Game.LastHighscore = GameEngine.Score;
 			}
 		}
     }

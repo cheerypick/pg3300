@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace SnakeMess {
 
@@ -13,9 +14,12 @@ namespace SnakeMess {
         private Boolean runGame;
         private Coord _newHead;
         private Border border;
+	    private int _level = 1;
+	    private int _speed = 100;
 
 		// For å finne ut om man spiser normal eller special pellet
 	    private bool _specialPellet = false;
+		public static int Score { get; set; }
 
 		// Hvor mange poeng og hvor mye snake skal vokse når du spiser en special pellet.
 		public static int SpecialPelletNumber { get; set; }
@@ -33,7 +37,7 @@ namespace SnakeMess {
             // Cre
             border = new Border();
             border.write();
-            ShowScore = 0;
+            Score = 0;
             // Boolean for running the game
             runGame = true;
 
@@ -67,7 +71,6 @@ namespace SnakeMess {
         }
 
         // Skal være static method
-        public static int ShowScore { get; set; }
 
        // StreamWriter writer = new StreamWriter("test.txt");
         public void RunGame() {
@@ -84,7 +87,7 @@ namespace SnakeMess {
                 if (_newDir == 5) continue;
                 
                 // Wait 100 millis
-                if (timer.ElapsedMilliseconds < 100)  continue;
+                if (timer.ElapsedMilliseconds < _speed)  continue;
                 
                 // Restart counter
                 timer.Restart();
@@ -92,7 +95,7 @@ namespace SnakeMess {
                 // Get new snakehead
                 _newHead = snake.GetNewHead();
 
-                Menu.DrawInGameScore(ShowScore);
+                Menu.DrawInGameScore(Score, _level);
 
                 // Check if snake is eating pellet, do stuff if it is
                 CheckIfEatingPellet();
@@ -110,15 +113,12 @@ namespace SnakeMess {
         }
 
         // Check if snake is crashing in borders
-        public bool CheckIfBorderCrash()  {
-            foreach (Coord borderCoord in border.GetBorder())  {
-            if (borderCoord.Equals(_newHead)) return true;
+        public bool CheckIfBorderCrash()
+        {
+	        return Enumerable.Contains(border.GetBorder(), _newHead);
         }
 
-    return false;
-        }
-
-        // Check is snake is eating pellet/apple
+	    // Check is snake is eating pellet/apple
         public void CheckIfEatingPellet() {
             if (!pellet.CheckIfEatingPellet(snake)) return;
 
@@ -126,19 +126,23 @@ namespace SnakeMess {
 
 	        if (_specialPellet)
 	        {
-				ShowScore += SpecialPelletNumber;
+				Score += SpecialPelletNumber;
 				SpecialPelletExtraGrow = true;
 	        }
 	        else
 	        {
-		        ShowScore++;
+		        Score++;
 	        }
 		        
             // Grow snake
             snake.grow = true;
 			
+			// Increase speed every 10 pellets
+	        _level = Score/10 + 1;
+	        _speed = 110 - _level*10;
+
 			// Special kommer hvert random poeng.
-			if (ShowScore % _normalPelletsEatenUntilSpecial == 0)
+			if (Score % _normalPelletsEatenUntilSpecial == 0)
 	        {
 				// Generer nytt tall hver gang du spiser en special pellet
 				_normalPelletsEatenUntilSpecial = random.Next(1, 10);
