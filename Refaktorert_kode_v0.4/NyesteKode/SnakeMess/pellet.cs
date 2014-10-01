@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SnakeMess {
     public class pellet {
@@ -35,7 +33,7 @@ namespace SnakeMess {
 
                 // Place if spot is safe, place pellet
                 if (!foundSpot) continue;
-                ScreenHandler.drawPellet(new Coord(X,Y));
+                ScreenHandler.DrawPellet(new Coord(X,Y));
                 pelletCoord = new Coord(X, Y);
                 break;
             }

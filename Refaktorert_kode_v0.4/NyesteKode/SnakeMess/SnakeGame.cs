@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Diagnostics;
 
 using System.Threading;
@@ -34,8 +31,8 @@ namespace SnakeMess {
             screen = new ScreenHandler();
 
             // Get width and height from screen handler
-            boardW = screen.getWidth();
-            boardH = screen.getHeight();
+            boardW = screen.GetWidth();
+            boardH = screen.GetHeight();
 
             // Create snake
             snake = new Snake();
@@ -93,7 +90,7 @@ namespace SnakeMess {
 
                 // Update screen
 
-                screen.updateScreen(snake, pellet, newHead);
+                screen.UpdateScreen(snake, pellet, newHead);
 
                 // Update last direction. Shark bois 4ever
                 lastDirectionMoved = newDir;

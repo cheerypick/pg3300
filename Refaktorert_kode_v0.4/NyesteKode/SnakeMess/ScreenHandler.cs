@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Diagnostics;
 
 // This handles output
 
@@ -18,7 +13,7 @@ namespace SnakeMess {
         }
 
         // Update screen
-        public void updateScreen(Snake snake, pellet pellet, Coord newHead) {
+        public void UpdateScreen(Snake snake, pellet pellet, Coord newHead) {
 
             // Write over head
             Console.SetCursorPosition(snake.getHead().X, snake.getHead().Y);
@@ -42,16 +37,16 @@ namespace SnakeMess {
 
 
         // smoke some weed
-        public int getHeight() {
+        public int GetHeight() {
             return Console.WindowHeight;
         }
 
         // .. and eat a burga
-        public int getWidth() {
+        public int GetWidth() {
             return Console.WindowWidth;
         }
 
-        public static void drawPellet(Coord coord){
+        public static void DrawPellet(Coord coord){
             Console.ForegroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(coord.X, coord.Y);
             Console.Write("$");
