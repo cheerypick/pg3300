@@ -23,7 +23,7 @@ namespace SnakeMess {
 
             // Get width and height from screen handler
             boardW = screen.GetWidth();
-            boardH = screen.getHeight();
+            boardH = screen.GetHeight();
 
             // Create snake
             snake = new Snake();

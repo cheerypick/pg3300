@@ -12,14 +12,19 @@ namespace SnakeMess {
 		    String input = Console.ReadLine();
             Console.Clear();
 		    
+			// Sjekker om bruker vil spille
 			 if (input != null && input.Equals("n")){
 				Game.RunGame = false;
 			}
-             else if (input == null && !input.Equals("y")) {
-                
-			    GameStartMenu();
-		    }
-		    
+             else if (input != null && input.Equals("y"))
+             {
+
+				 Game.RunGame = true;
+             }
+             else
+             {
+	             GameStartMenu();
+             }
 	    }
 
        

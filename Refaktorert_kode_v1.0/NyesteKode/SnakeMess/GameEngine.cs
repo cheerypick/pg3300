@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
 
 namespace SnakeMess {
 
@@ -18,13 +17,18 @@ namespace SnakeMess {
 		// For å finne ut om man spiser normal eller special pellet
 	    private bool _specialPellet = false;
 
+		// Hvor mange poeng og hvor mye snake skal vokse når du spiser en special pellet.
+		public static int SpecialPelletNumber { get; set; }
+
+
 	    private int _normalPelletsEatenUntilSpecial;
 		Random random = new Random();
         public GameEngine() {
 			
+			/*		Default verdier		*/
 			// Første gang spillet skal bestemme når en special pellet skal spawne.
 			_normalPelletsEatenUntilSpecial = random.Next(1, 10);
-
+	        SpecialPelletNumber = 3;
 
             // Cre
             border = new Border();
@@ -41,7 +45,7 @@ namespace SnakeMess {
 
             // Get width and height from screen handler
             boardW = screen.GetWidth();
-            boardH = screen.getHeight();
+            boardH = screen.GetHeight();
 
             // Create snake
             snake = new Snake();
@@ -122,7 +126,7 @@ namespace SnakeMess {
 
 	        if (_specialPellet)
 	        {
-		        ShowScore += 3;
+				ShowScore += SpecialPelletNumber;
 				SpecialPelletExtraGrow = true;
 	        }
 	        else

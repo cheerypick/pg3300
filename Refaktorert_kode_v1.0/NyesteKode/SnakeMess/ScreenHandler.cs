@@ -37,7 +37,7 @@ namespace SnakeMess {
 	        if (GameEngine.SpecialPelletExtraGrow)
 	        {
 		        _count++;
-		        if (_count == 3)	// Vokser 3 ganger når du spiser en special pellet, pga du får 3 poeng for hver special pellet.
+				if (_count == GameEngine.SpecialPelletNumber)	// Vokser 3 ganger når du spiser en special pellet, pga du får 3 poeng for hver special pellet.
 		        {
 			        _count = 0;
 					snake.grow = false;
