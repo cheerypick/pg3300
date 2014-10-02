@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using  System.Windows.Forms;
 
 namespace SnakeMess {
     class Menu {
@@ -30,8 +31,9 @@ namespace SnakeMess {
              }
 			 else if (input != null && input.Equals("H"))
 			 {
-				Console.WriteLine(Game.LastHighscore);
-				GameStartMenu();
+				 MessageBox.Show("Highscore: " + Game.LastHighscore.ToString());
+				 GameStartMenu();
+
 			 }
              else
              {
