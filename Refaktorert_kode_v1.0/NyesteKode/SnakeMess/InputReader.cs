@@ -21,9 +21,12 @@ namespace SnakeMess
                 // Return diffrent ints for different inputs from different keys, different
                 switch (_inputKey.Key){
                     case ConsoleKey.Escape: // THIS IS FOR ESCAPE DO NOT REMOVE ME
-                    return 4;
+                    //Environment.Exit(1);
+		                return 4;
+						
                     case ConsoleKey.Spacebar:
-						return 5;
+						gameEngine.isPaused = !gameEngine.isPaused;
+		                return lastDirection;
                     case ConsoleKey.UpArrow: // 0
                         return lastDirection != 2 ? 0 : lastDirection;
 

@@ -15,7 +15,7 @@ namespace SnakeMess {
         private Coord _newHead;
         private Border border;
 	    private int _level = 1;
-		public int _speed = 100;
+		public int _speed = 200;
 
 		// For å finne ut om man spiser normal eller special pellet
 	    private bool _specialPellet = false;
@@ -83,47 +83,31 @@ namespace SnakeMess {
 				
 				// Set direction of snake
 				if (_newDir < 4) snake.setDirection(_newDir);
-		        if (_newDir == 5)
-		        {
-			        isPaused = !isPaused;
-			        Console.Write(isPaused);
-		        }
 
-				
-		        if (!isPaused)
-		        {
+		        if (isPaused) continue;
+		        // Wait _speed  millis
+		        if (timer.ElapsedMilliseconds < _speed) continue;
 
-			        // Wait 100 millis
-			        if (timer.ElapsedMilliseconds < _speed) continue;
+		        // Restart counter
+		        timer.Restart();
 
-/*
-				Console.Write(_lastDirectionMoved);
+		        // Get new snakehead
+		        _newHead = snake.GetNewHead();
 
-				Console.Write(isPaused);
+		        Menu.DrawInGameScore(Score, _level);
 
-*/
+		        // Check if snake is eating pellet, do stuff if it is
+		        CheckIfEatingPellet();
 
-			        // Restart counter
-			        timer.Restart();
+		        // Check if snake is crashing in border
+		        if (border.checkCollision(_newHead) || snake.CheckSelfCannibalism(_inputReader, _newHead)) break;
 
-			        // Get new snakehead
-			        _newHead = snake.GetNewHead();
+		        // Update screen
 
-			        Menu.DrawInGameScore(Score, _level);
+		        screen.UpdateScreen(snake, pellet, _newHead);
 
-			        // Check if snake is eating pellet, do stuff if it is
-			        CheckIfEatingPellet();
-
-			        // Check if snake is crashing in border
-			        if (border.checkCollision(_newHead) || snake.CheckSelfCannibalism(_inputReader, _newHead)) break;
-
-			        // Update screen
-
-			        screen.UpdateScreen(snake, pellet, _newHead);
-
-			        // Update last direction. Shark bois 4ever
-			        _lastDirectionMoved = _newDir;
-		        }
+		        // Update last direction. Shark bois 4ever
+		        _lastDirectionMoved = _newDir;
 	        }
         }
 

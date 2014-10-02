@@ -12,10 +12,7 @@ namespace SnakeMess{
 	    public static int LastHighscore { get; set; }
 	    
 	    public static void Main(string[] arguments) {
-
-			 GameEngine gameEngine;
-
-			// Oppgave 1
+		    // Oppgave 1
    //     OriginalGame game = new OriginalGame();
    //     game.runOriginlGame();
 
@@ -31,7 +28,7 @@ namespace SnakeMess{
 			Menu.GameStartMenu();
 		    
 			while (RunGame)  {
-				gameEngine = new GameEngine();
+				var gameEngine = new GameEngine();
 				gameEngine.RunGame();
 				RunGame = Menu.GameOverMenu(gameEngine);
 			} 

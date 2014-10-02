@@ -7,20 +7,32 @@ namespace SnakeMess {
 
 		/*		Menyen før gamet starter		*/
 	    public static void GameStartMenu() {
-		    
-			Console.Write("\n\t\t*********** Snake spill of Doom ********\n\t\tSpille lol?\n\n\t\t");
+		    Console.SetCursorPosition(15,5);
+		    Console.Write("Welcome to Snake Game. It's not messy anymore. At all.\n");
+			Console.SetCursorPosition(25, 7);
+			Console.WriteLine("Press P to {Play}");
+			Console.SetCursorPosition(25, 8);
+			Console.WriteLine("Press X to {Exit}");
+			Console.SetCursorPosition(25, 9);
+			Console.WriteLine("Press H to see {Highscore}");
+
 		    String input = Console.ReadLine();
             Console.Clear();
 		    
 			// Sjekker om bruker vil spille
-			 if (input != null && input.Equals("n")){
+			 if (input != null && input.Equals("X")){
 				Game.RunGame = false;
 			}
-             else if (input != null && input.Equals("y"))
+             else if (input != null && input.Equals("P"))
              {
 
 				 Game.RunGame = true;
              }
+			 else if (input != null && input.Equals("H"))
+			 {
+				Console.WriteLine(Game.LastHighscore);
+				GameStartMenu();
+			 }
              else
              {
 	             GameStartMenu();
@@ -35,7 +47,7 @@ namespace SnakeMess {
 			// Viser score på skjermen
 			Console.SetCursorPosition(1, 1);
 			// Skriver ut highscore og litt tekst
-			Console.Write("\tHighScore: {0}\t\tScore: {1}\t\tLevel: {2}", Game.LastHighscore, showScore, level);
+			Console.Write("\tHighScore: {0}\t\tScore: {1}\t\tLevel: {2} ", Game.LastHighscore, showScore, level);
 		}
 
 		// Menyen som kommer når det blir gameover
