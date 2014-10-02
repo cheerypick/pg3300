@@ -21,7 +21,7 @@ namespace SnakeMess{
 			
 			  
 			//	 Oppgave 2
-			
+
 			LastHighscore = Convert.ToInt32(_getHighscoreFromFile);
 			// Starter det første spillet
 			RunGame = true;

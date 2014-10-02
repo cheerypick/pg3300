@@ -7,7 +7,9 @@ namespace SnakeMess {
 
 
 		/*		Menyen før gamet starter		*/
-	    public static void GameStartMenu() {
+	    public static void GameStartMenu()
+	    {	
+		    Console.ForegroundColor = ConsoleColor.White;
 		    Console.SetCursorPosition(15,5);
 		    Console.Write("Welcome to Snake Game. It's not messy anymore. At all.\n");
 			Console.SetCursorPosition(25, 7);
@@ -16,21 +18,25 @@ namespace SnakeMess {
 			Console.WriteLine("Press X to {Exit}");
 			Console.SetCursorPosition(25, 9);
 			Console.WriteLine("Press H to see {Highscore}");
+			Console.SetCursorPosition(25, 10);
+
 
 		    String input = Console.ReadLine();
             Console.Clear();
 		    
 			// Sjekker om bruker vil spille
-			 if (input != null && input.Equals("X")){
+			if (string.Equals(input, "X", StringComparison.OrdinalIgnoreCase)
+)
+			{
 				Game.RunGame = false;
 			}
-             else if (input != null && input.Equals("P"))
+             else if (string.Equals(input, "P", StringComparison.OrdinalIgnoreCase))
              {
 
 				 Game.RunGame = true;
              }
-			 else if (input != null && input.Equals("H"))
-			 {
+			else if (string.Equals(input, "H", StringComparison.OrdinalIgnoreCase))
+			{
 				 MessageBox.Show("Highscore: " + Game.LastHighscore.ToString());
 				 GameStartMenu();
 
@@ -60,6 +66,7 @@ namespace SnakeMess {
 
 			// Tegner menyen som kommer når det er gameover
 			DrawGameOverMenu(GameEngine.Score);
+			GameStartMenu();
 
 			// Tar imot input, og gjør det bruker sier.
 			String input = Console.ReadLine();

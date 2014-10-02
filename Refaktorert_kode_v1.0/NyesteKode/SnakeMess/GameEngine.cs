@@ -80,9 +80,9 @@ namespace SnakeMess {
 	        {
 		        // Change direction if key is pressed
 		        _newDir = _inputReader.ReadKeys(_lastDirectionMoved, this);
-				
-				// Set direction of snake
-				if (_newDir < 4) snake.setDirection(_newDir);
+
+		        // Set direction of snake
+		        if (_newDir < 4) snake.setDirection(_newDir);
 
 		        if (isPaused) continue;
 		        // Wait _speed  millis
