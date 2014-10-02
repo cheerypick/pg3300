@@ -25,7 +25,7 @@ namespace SnakeMess
 
 		// For å finne ut om man spiser normal eller special pellet
 		private bool _specialPellet;
-		public int _speed = 200;
+		public int _speed = 100;
 		public Boolean isPaused = false;
 
 		public GameEngine()
