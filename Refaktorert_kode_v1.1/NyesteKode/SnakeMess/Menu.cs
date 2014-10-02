@@ -6,7 +6,6 @@ namespace SnakeMess {
     class Menu {
 
 
-		/*		Menyen før gamet starter		*/
 
 	    public static void GameStartMenu()
 	    {
@@ -22,25 +21,53 @@ namespace SnakeMess {
 			    Console.SetCursorPosition(25, 9);
 			    Console.WriteLine("Press H to see {Highscore}");
 			    Console.SetCursorPosition(25, 10);
+				Console.WriteLine("Press R to read {Rules}");
+				Console.SetCursorPosition(25, 11);
+				Console.WriteLine("Press A to read {About}");
+				Console.SetCursorPosition(25, 12);
 
 
 			    String input = Console.ReadLine();
 			    Console.Clear();
 
-			    // Sjekker om bruker vil spille
+				//Exit
 			    if (string.Equals(input, "X", StringComparison.OrdinalIgnoreCase))
 			    {
 				    Game.RunGame = false;
+					Environment.Exit(1);
 			    }
+
+				//Play
 			    else if (string.Equals(input, "P", StringComparison.OrdinalIgnoreCase))
 			    {
 				    Game.RunGame = true;
 			    }
+
+				//See Highscore
 			    else if (string.Equals(input, "H", StringComparison.OrdinalIgnoreCase))
 			    {
 				    MessageBox.Show("Highscore: " + Game.LastHighscore.ToString());
 				    continue;
 			    }
+
+				//Read Rules
+				else if (string.Equals(input, "R", StringComparison.OrdinalIgnoreCase))
+				{
+					Console.Clear();
+					Game.RunGame = false;
+					MessageBox.Show(
+						"Use arrows to move snake. \n Special pellet appears randomly and gives random point amount. \nSpeed increases each level.");
+					GameStartMenu();
+				}
+
+				else if (string.Equals(input, "A", StringComparison.OrdinalIgnoreCase))
+				{
+					Game.RunGame = false;
+					MessageBox.Show(
+						"Westerdals Snake. \nCreated by Kim Frode Flaethe, Idar Tjomstøl Vassdal, Katrine Orlova\n(c)2014");
+					GameStartMenu();
+				}
+
 			    else
 			    {
 				    continue;
@@ -50,59 +77,30 @@ namespace SnakeMess {
 	    }
 
 
-	    /*		Score og Game Over meny		*/
+	    /*		Score  Game Over meny		*/
 
 		// Score som blir vist in-game
 		public static void DrawInGameScore(int showScore, int level){
-			// Viser score på skjermen
 			Console.SetCursorPosition(1, 1);
-			// Skriver ut highscore og litt tekst
 			Console.Write("\tHighScore: {0}\t\tScore: {1}\t\tLevel: {2} ", Game.LastHighscore, showScore, level);
 		}
 
-		// Menyen som kommer når det blir gameover
-		public static bool GameOverMenu(GameEngine snake)
-		{
-			// Sjekker først om det ble ny highscore
-			CheckForHighScore();
+		// Game Over Menu
+	    public static bool GameOver(GameEngine snake)
+	    {
+		    while (true)
+		    {
+			    // Checks if High
+			    CheckForHighScore();
+			    MessageBox.Show("You lost. Your score: " + GameEngine.Score + "\n Highscore: " + Game.LastHighscore);
 
-			// Tegner menyen som kommer når det er gameover
-			DrawGameOverMenu(GameEngine.Score);
-			GameStartMenu();
+			    // Tegner menyen som kommer når det er gameover
+			    Console.Clear();
+			    GameStartMenu();
+		    }
+	    }
 
-			// Tar imot input, og gjør det bruker sier.
-			String input = Console.ReadLine();
-			if (input != null && input.Equals("y"))
-			{
-				Console.Clear();
-				// Må resette score for hver runde.
-				GameEngine.Score = 0;
-				return true;
-			}
-			if (input != null && input.Equals("n"))
-			{
-				Console.Clear();
-				Console.WriteLine("\n\n\tSee you later!");
-				Console.ReadKey(true);
-				return false;
-			}
-			// Viss du skriver feil.
-			return GameOverMenu(snake);
-		}
-
-
-		// Menyen som blir tegna når det er gameover
-		public static void DrawGameOverMenu(int showScore)
-		{
-			// Tømmer skjermen før teksten kommer
-			Console.Clear();
-			// Setter utgangspunk for teksten som skal komme
-			Console.SetCursorPosition(1, 1);
-			// Skriver ut highscore og litt tekst
-
-			Console.Write("\tHighScore: " + Game.LastHighscore + "\t\tScore: " + showScore);
-			Console.Write("\n\n\tYou lost lol\n\n\tTry again? y/n\n\n\t");
-		}
+	
 
 		/*		HighScore		*/
 		private static void CheckForHighScore()
