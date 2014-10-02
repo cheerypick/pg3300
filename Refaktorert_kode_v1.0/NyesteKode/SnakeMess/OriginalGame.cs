@@ -44,7 +44,7 @@ namespace SnakeMess {
             while (runGame) {
 
                 // Change direction if key is pressed
-                newDir = _inputReader.ReadKeys(lastDirectionMoved);
+                //newDir = _inputReader.ReadKeys(lastDirectionMoved);
                 // Set direction of snake
                 snake.setDirection(newDir);
 

@@ -3,8 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 
 namespace SnakeMess {
-
-    internal class GameEngine {
+	public class GameEngine {
         private ScreenHandler screen;
         private InputReader _inputReader;
         private int _lastDirectionMoved, _newDir, boardW, boardH;
@@ -12,10 +11,11 @@ namespace SnakeMess {
         private Pellet pellet;
         private Stopwatch timer;
         private Boolean runGame;
+	    public Boolean isPaused = false;
         private Coord _newHead;
         private Border border;
 	    private int _level = 1;
-	    private int _speed = 100;
+		public int _speed = 100;
 
 		// For å finne ut om man spiser normal eller special pellet
 	    private bool _specialPellet = false;
@@ -76,40 +76,55 @@ namespace SnakeMess {
         public void RunGame() {
 
             // Running the game
-            while (runGame) {
-                
-                // Change direction if key is pressed
-                _newDir = _inputReader.ReadKeys(_lastDirectionMoved);
-                // Set direction of snake
-                snake.setDirection(_newDir);
+	        while (runGame)
+	        {
+		        // Change direction if key is pressed
+		        _newDir = _inputReader.ReadKeys(_lastDirectionMoved, this);
+				
+				// Set direction of snake
+				if (_newDir < 4) snake.setDirection(_newDir);
+		        if (_newDir == 5)
+		        {
+			        isPaused = !isPaused;
+			        Console.Write(isPaused);
+		        }
 
-                // newDir = 5 betyr pause. We are still in alpha
-                if (_newDir == 5) continue;
-                
-                // Wait 100 millis
-                if (timer.ElapsedMilliseconds < _speed)  continue;
-                
-                // Restart counter
-                timer.Restart();
+				
+		        if (!isPaused)
+		        {
 
-                // Get new snakehead
-                _newHead = snake.GetNewHead();
+			        // Wait 100 millis
+			        if (timer.ElapsedMilliseconds < _speed) continue;
 
-                Menu.DrawInGameScore(Score, _level);
+/*
+				Console.Write(_lastDirectionMoved);
 
-                // Check if snake is eating pellet, do stuff if it is
-                CheckIfEatingPellet();
+				Console.Write(isPaused);
 
-                // Check if snake is crashing in border
-                if (border.checkCollision(_newHead) || snake.CheckSelfCannibalism(_inputReader, _newHead)) break;
+*/
 
-                // Update screen
+			        // Restart counter
+			        timer.Restart();
 
-                screen.UpdateScreen(snake, pellet, _newHead);
+			        // Get new snakehead
+			        _newHead = snake.GetNewHead();
 
-                // Update last direction. Shark bois 4ever
-                _lastDirectionMoved = _newDir;
-            }
+			        Menu.DrawInGameScore(Score, _level);
+
+			        // Check if snake is eating pellet, do stuff if it is
+			        CheckIfEatingPellet();
+
+			        // Check if snake is crashing in border
+			        if (border.checkCollision(_newHead) || snake.CheckSelfCannibalism(_inputReader, _newHead)) break;
+
+			        // Update screen
+
+			        screen.UpdateScreen(snake, pellet, _newHead);
+
+			        // Update last direction. Shark bois 4ever
+			        _lastDirectionMoved = _newDir;
+		        }
+	        }
         }
 
         // Check if snake is crashing in borders

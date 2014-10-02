@@ -10,8 +10,10 @@ namespace SnakeMess{
 		private static string _getHighscoreFromFile = File.ReadAllText(@"..\..\score.txt");
 		// Score player har nå.
 	    public static int LastHighscore { get; set; }
-
+	    
 	    public static void Main(string[] arguments) {
+
+			 GameEngine gameEngine;
 
 			// Oppgave 1
    //     OriginalGame game = new OriginalGame();
@@ -29,9 +31,9 @@ namespace SnakeMess{
 			Menu.GameStartMenu();
 		    
 			while (RunGame)  {
-				var snake = new GameEngine();
-				snake.RunGame();
-				RunGame = Menu.GameOverMenu(snake);
+				gameEngine = new GameEngine();
+				gameEngine.RunGame();
+				RunGame = Menu.GameOverMenu(gameEngine);
 			} 
         }
     }

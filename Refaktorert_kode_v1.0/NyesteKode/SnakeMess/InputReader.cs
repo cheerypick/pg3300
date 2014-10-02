@@ -11,7 +11,7 @@ namespace SnakeMess
         private ConsoleKeyInfo _inputKey;
 		
 	    // Method for reading keys
-        public int ReadKeys(int lastDirection)  {
+        public int ReadKeys(int lastDirection, GameEngine gameEngine)  {
 
             // If key is pressed, read it
             if (Console.KeyAvailable)
@@ -20,10 +20,10 @@ namespace SnakeMess
 
                 // Return diffrent ints for different inputs from different keys, different
                 switch (_inputKey.Key){
-                        /*  case ConsoleKey.Escape: // THIS IS FOR ESCAPE DO NOT REMOVE ME
-                    return 4;*/
+                    case ConsoleKey.Escape: // THIS IS FOR ESCAPE DO NOT REMOVE ME
+                    return 4;
                     case ConsoleKey.Spacebar:
-                        return 5;
+						return 5;
                     case ConsoleKey.UpArrow: // 0
                         return lastDirection != 2 ? 0 : lastDirection;
 
