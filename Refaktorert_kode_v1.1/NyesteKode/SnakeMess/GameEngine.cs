@@ -20,7 +20,7 @@ namespace SnakeMess
 		private int _lastDirectionMoved;
 		private int _level = 1;
 		private int _newDir;
-		private Coord _newHead;
+		private Coordinate _newHead;
 		private int _normalPelletsEatenUntilSpecial;
 
 		// For å finne ut om man spiser normal eller special pellet

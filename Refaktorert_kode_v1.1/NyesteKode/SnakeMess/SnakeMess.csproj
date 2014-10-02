@@ -45,13 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Border.cs" />
-    <Compile Include="Coord.cs" />
+    <Compile Include="Coordinate.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="NewHead.cs" />
     <Compile Include="InputReader.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="OriginalGame.cs" />
-    <Compile Include="pellet.cs" />
+    <Compile Include="Pellet.cs" />
     <Compile Include="ScreenHandler.cs" />
     <Compile Include="Snake.cs" />
     <Compile Include="GameEngine.cs" />

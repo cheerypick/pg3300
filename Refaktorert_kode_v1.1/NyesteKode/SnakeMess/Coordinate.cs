@@ -1,17 +1,17 @@
 ﻿
 namespace SnakeMess {
 
-        public class Coord {
+        public class Coordinate {
 
         public int X;
         public int Y;
 
-        public Coord(int x = 0, int y = 0) {
+        public Coordinate(int x = 0, int y = 0) {
             X = x;
             Y = y;
         }
 
-        public Coord(Coord input) {
+        public Coordinate(Coordinate input) {
             X = input.X;
             Y = input.Y;
         }

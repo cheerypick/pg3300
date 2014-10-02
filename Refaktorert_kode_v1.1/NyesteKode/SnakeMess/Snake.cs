@@ -10,17 +10,17 @@ namespace SnakeMess {
         private int direction;
 
         // Snake body
-        private List<Coord> snakeBody;
+        private List<Coordinate> snakeBody;
 
         // Coords for head and new Head
-        private Coord head, newHead;
+        private Coordinate head, newHead;
 
         // Boolean for letting snake grow
         public bool grow;
 
         // Constructor
         public Snake() {
-            snakeBody = new List<Coord>();
+            snakeBody = new List<Coordinate>();
             grow = true;
         }
 
@@ -32,40 +32,40 @@ namespace SnakeMess {
         // Add bodies to snake
         public void addBody(int bodies, int xPosition, int yPosition) {
             for (int i = 0; i < bodies; i++) {
-                snakeBody.Add(new Coord(xPosition, yPosition));
+                snakeBody.Add(new Coordinate(xPosition, yPosition));
             }
         }
 
         // Return snakes coords
-        public List<Coord> getCoords() {
+        public List<Coordinate> getCoords() {
             return snakeBody;
         }
 
         // BJ lulz
-        public Coord getHead() {
+        public Coordinate getHead() {
             return snakeBody.Last();
         }
 
         // Get tail, is this even used?
-        public Coord getTail() {
+        public Coordinate getTail() {
             return snakeBody.First();
         }
 
         // Check if snake has sniffed fuel
-        public Boolean CheckSelfCannibalism(InputReader gm, Coord newHead) {
+        public Boolean CheckSelfCannibalism(InputReader gm, Coordinate newHead) {
             return getCoords().Any(x => x.X == newHead.X && x.Y == newHead.Y);
         }
 
         // Method for adding new head to the right side and direction of snake
-        public Coord GetNewHead() {
+        public Coordinate GetNewHead() {
             // Get head
             return NewHead.GetNewHead(snakeBody.Last(), direction);
 
         }
 
         // Check if head is colliding
-        public bool CheckBoardCollision(List<Coord> boardList ) {
-            foreach (Coord borderCoord in boardList)
+        public bool CheckBoardCollision(List<Coordinate> boardList ) {
+            foreach (Coordinate borderCoord in boardList)
                 if (borderCoord.Equals(newHead)) return true;
             return false;
         }

@@ -14,7 +14,7 @@ namespace SnakeMess {
         }
 
         // Update screen
-        public void UpdateScreen(Snake snake, Pellet pellet, Coord newHead) {
+        public void UpdateScreen(Snake snake, Pellet pellet, Coordinate newHead) {
 
             // Write over head
             Console.SetCursorPosition(snake.getHead().X, snake.getHead().Y);
@@ -63,19 +63,19 @@ namespace SnakeMess {
         }
 
 		// Tegner vanlig Pellet
-        public static void DrawPellet(Coord coord){
+        public static void DrawPellet(Coordinate coordinate){
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.SetCursorPosition(coord.X, coord.Y);
+            Console.SetCursorPosition(coordinate.X, coordinate.Y);
             Console.Write("$");
             Console.ForegroundColor = ConsoleColor.Green;
         }
 
 
 		// Tegner special Pellet
-		public static void DrawSpecialPellet(Coord coord)
+		public static void DrawSpecialPellet(Coordinate coordinate)
 		{
 			Console.ForegroundColor = ConsoleColor.White;
-			Console.SetCursorPosition(coord.X, coord.Y);
+			Console.SetCursorPosition(coordinate.X, coordinate.Y);
 			Console.Write("#");
 			Console.ForegroundColor = ConsoleColor.Green;
 		}

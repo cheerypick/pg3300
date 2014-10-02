@@ -2,9 +2,9 @@
 {
 	internal class NewHead
 	{
-		public static Coord GetNewHead(Coord head, int direction)
+		public static Coordinate GetNewHead(Coordinate head, int direction)
 		{
-			var newHead = new Coord(head);
+			var newHead = new Coordinate(head);
 
 			// Where new head is created is decided by direction
 			switch (direction)

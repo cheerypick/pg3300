@@ -10,7 +10,7 @@ namespace SnakeMess {
         private Pellet pellet;
         private System.Diagnostics.Stopwatch timer;
         private Boolean runGame;
-        private Coord newHead;
+        private Coordinate newHead;
 
         public void runOriginlGame(){
             runGame = true;
