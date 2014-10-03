@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
+
 namespace SnakeNotMess
 {
 	public class GameEngine
@@ -18,7 +19,7 @@ namespace SnakeNotMess
 		private readonly Stopwatch _timer;
 		public Boolean IsPaused = false;
 		private int _lastDirectionMoved;
-		private int _level = 1;
+		private readonly Level _level;
 		private int _newDir;
 		private Coordinate _newHead;
 		private int _normalPelletsEatenUntilSpecial;
@@ -35,6 +36,8 @@ namespace SnakeNotMess
 			// Create border
 			_border = new Border();
 			_border.write();
+
+			_level = new Level(1);
 			Score = 0;
 
 			// Boolean for running the game
@@ -96,7 +99,7 @@ namespace SnakeNotMess
 				// Get new snakehead
 				_newHead = _snake.GetNewHead();
 
-				Menu.UpperScorePanel(Score, _level);
+				Menu.UpperScorePanel(Score, _level.LevelNumber);
 
 				// Check if snake is eating pellet
 				CheckIfEatingPellet();
@@ -133,11 +136,11 @@ namespace SnakeNotMess
 			// Grow snake
 			_snake.Grow = true;
 
-			// Level up every 10 pellets
-			_level = Score/10 + 1;
+			// Level up 
+			_level.LevelNumber = Score / Level.PelletsToNewLevel + 1;
 
-			//Increase speed with 10ms each level, starting with 100
-			_speed = 110 - _level*10;
+			//Increase speed 
+			_speed = Level.InitialSpeed - _level.LevelNumber*Level.MsSpeedDifference;
 
 			//Special pellets appear at random times
 			if (Score%_normalPelletsEatenUntilSpecial == 0)
