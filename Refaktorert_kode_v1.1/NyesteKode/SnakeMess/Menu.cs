@@ -21,59 +21,56 @@ namespace SnakeMess {
 			    Console.SetCursorPosition(25, 9);
 			    Console.WriteLine("Press H to see {Highscore}");
 			    Console.SetCursorPosition(25, 10);
-				Console.WriteLine("Press R to read {Rules}");
-				Console.SetCursorPosition(25, 11);
-				Console.WriteLine("Press A to read {About}");
-				Console.SetCursorPosition(25, 12);
+			    Console.WriteLine("Press R to read {Rules}");
+			    Console.SetCursorPosition(25, 11);
+			    Console.WriteLine("Press A to read {About}");
+			    Console.SetCursorPosition(25, 12);
 
 
 			    String input = Console.ReadLine();
 			    Console.Clear();
-
-				//Exit
-			    if (string.Equals(input, "X", StringComparison.OrdinalIgnoreCase))
+			    if (input == null) continue;
+			    switch (input.ToLower())
 			    {
-				    Game.RunGame = false;
-					Environment.Exit(1);
-			    }
+				    case "x": //Exit
+				    {
+					    Game.RunGame = false;
+					    Environment.Exit(1);
+					    continue;
+				    }
+				    case "p" : //Play
+				    { 
+					    Game.RunGame = true;
+						break;
+				    }
 
-				//Play
-			    else if (string.Equals(input, "P", StringComparison.OrdinalIgnoreCase))
-			    {
-				    Game.RunGame = true;
-			    }
+				    case "h": //Highscore
+					{
+						MessageBox.Show("Highscore: " + Game.LastHighscore.ToString());
+						continue;
+					}
 
-				//See Highscore
-			    else if (string.Equals(input, "H", StringComparison.OrdinalIgnoreCase))
-			    {
-				    MessageBox.Show("Highscore: " + Game.LastHighscore.ToString());
-				    continue;
-			    }
+				    case "r": //Rules
+				    {
+					    Console.Clear();
+					    Game.RunGame = false;
+					    MessageBox.Show(
+						"Use arrows to move snake. \nSpecial pellet appears randomly and gives random point amount. \nSpeed increases each level.");
+					    GameStartMenu();
+					    continue;
+				    }
+				    case "a": //About
+				    {
+					    MessageBox.Show(
+						 "Westerdals Snake. \nCreated by Kim Frode Flaethe, Idar Tjomstøl Vassdal, Katrine Orlova\n(c)2014");
+					    GameStartMenu();
+				    }
+					    break;
+				    default: continue;
+				} break;
 
-				//Read Rules
-				else if (string.Equals(input, "R", StringComparison.OrdinalIgnoreCase))
-				{
-					Console.Clear();
-					Game.RunGame = false;
-					MessageBox.Show(
-						"Use arrows to move snake. \n Special pellet appears randomly and gives random point amount. \nSpeed increases each level.");
-					GameStartMenu();
-				}
-
-				else if (string.Equals(input, "A", StringComparison.OrdinalIgnoreCase))
-				{
-					Game.RunGame = false;
-					MessageBox.Show(
-						"Westerdals Snake. \nCreated by Kim Frode Flaethe, Idar Tjomstøl Vassdal, Katrine Orlova\n(c)2014");
-					GameStartMenu();
-				}
-
-			    else
-			    {
-				    continue;
-			    }
-			    break;
 		    }
+
 	    }
 
 
@@ -86,18 +83,12 @@ namespace SnakeMess {
 		}
 
 		// Game Over Menu
-	    public static bool GameOver(GameEngine snake)
+	    public static void GameOver(GameEngine snake)
 	    {
-		    while (true)
-		    {
-			    // Checks if High
-			    CheckForHighScore();
+		   		CheckForHighScore();
 			    MessageBox.Show("You lost. Your score: " + GameEngine.Score + "\n Highscore: " + Game.LastHighscore);
-
-			    // Tegner menyen som kommer når det er gameover
-			    Console.Clear();
+				Console.Clear();
 			    GameStartMenu();
-		    }
 	    }
 
 	

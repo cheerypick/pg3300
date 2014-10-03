@@ -5,11 +5,9 @@ namespace SnakeMess
 {
 	internal class Game
 	{
-		//	public static bool runGame = true;
-		// Henter fila med highscore.
+		// Get highscore
 		private static readonly string GetHighscoreFromFile = File.ReadAllText(@"..\..\score.txt");
 		public static bool RunGame { get; set; }
-		// Score player har nå.
 		public static int LastHighscore { get; set; }
 
 		public static void Main(string[] arguments)
@@ -30,7 +28,7 @@ namespace SnakeMess
 			{
 				var gameEngine = new GameEngine();
 				gameEngine.RunGame();
-				RunGame = Menu.GameOver(gameEngine);
+				Menu.GameOver(gameEngine);
 			}
 		}
 	}
