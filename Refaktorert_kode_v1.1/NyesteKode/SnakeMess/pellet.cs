@@ -1,45 +1,50 @@
 ﻿using System;
 using System.Linq;
 
-namespace SnakeMess {
+namespace SnakeNotMess
+{
+	public class Pellet : Coordinate
+	{
+		private Coordinate _pelletCoordinate; // Real coordinates
 
-    public class Pellet {
-        private int _x, _y; // Coordinates, these may be removed
-        private Coordinate _pelletCoordinate; // Real coordinates
+		// Constructor
+		public Pellet(int x, int y)
+		{
+			X = x;
+			Y = y;
+			_pelletCoordinate = new Coordinate(x, y);
+		}
 
-        // Constructor
-        public Pellet(int x, int y) {
-            _x = x;
-            _y = y;
-            _pelletCoordinate = new Coordinate(x, y);
-        }
-
-        // Check if snake is eating pellet
-        public Boolean CheckIfEatingPellet(Snake snake) {
-            return (snake.GetNewHead().X == _pelletCoordinate.X && snake.GetNewHead().Y == _pelletCoordinate.Y);
-        }
+		// Check if snake is eating pellet
+		public Boolean CheckIfEatingPellet(Snake snake)
+		{
+			return (snake.GetNewHead().X == _pelletCoordinate.X && snake.GetNewHead().Y == _pelletCoordinate.Y);
+		}
 
 
-        // Place new pellet
-        public void PlacePellet(Snake snake, int boardH, int boardW) {
-            var random = new Random();
+		// Place new pellet
+		public void PlacePellet(Snake snake, int boardH, int boardW)
+		{
+			var random = new Random();
 
-            // Try to place in a new spot
-            while (true) {
-                _x = random.Next(1, boardW - 1);
-                _y = random.Next(4, boardH - 1);
+			// Try to place in a new spot
+			while (true)
+			{
+				X = random.Next(1, boardW - 1);
+				Y = random.Next(4, boardH - 1);
 
-                // This made itself, rofl, idk. Kinda makes sense
-                var foundSpot = snake.getCoords().All(coord => _x != coord.X || _y != coord.Y);
+				// This made itself, rofl, idk. Kinda makes sense
+				bool foundSpot = snake.GetCoords().All(coord => X != coord.X || Y != coord.Y);
 
-                // Place if spot is safe, place pellet
-                if (!foundSpot) continue;
-				ScreenHandler.DrawPellet(new Coordinate(_x, _y));
+				// Place if spot is safe, place pellet
+				if (!foundSpot) continue;
+				ScreenHandler.DrawPellet(new Coordinate(X, Y));
 
-                _pelletCoordinate = new Coordinate(_x, _y);
-                break;
-            }
-        }
+				_pelletCoordinate = new Coordinate(X, Y);
+				break;
+			}
+		}
+
 		public void PlaceSpecialPellet(Snake snake, int boardH, int boardW)
 		{
 			var random = new Random();
@@ -47,22 +52,22 @@ namespace SnakeMess {
 			// Try to place in a new spot
 			while (true)
 			{
-				_x = random.Next(1, boardW - 1);
-				_y = random.Next(4, boardH - 1);
+				X = random.Next(1, boardW - 1);
+				Y = random.Next(4, boardH - 1);
 
-				var foundSpot = snake.getCoords().All(coord => _x != coord.X || _y != coord.Y);
+				bool foundSpot = snake.GetCoords().All(coord => X != coord.X || Y != coord.Y);
 
 				if (!foundSpot) continue;
-				ScreenHandler.DrawSpecialPellet(new Coordinate(_x, _y));
+				ScreenHandler.DrawSpecialPellet(new Coordinate(X, Y));
 
-				_pelletCoordinate = new Coordinate(_x, _y);
+				_pelletCoordinate = new Coordinate(X, Y);
 				break;
 			}
 		}
 
-        public Coordinate GetCoords() {
-            return _pelletCoordinate;
-        }
-    }
-
+		public Coordinate GetCoords()
+		{
+			return _pelletCoordinate;
+		}
+	}
 }

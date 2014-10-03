@@ -50,7 +50,6 @@
     <Compile Include="NewHead.cs" />
     <Compile Include="InputHandler.cs" />
     <Compile Include="Menu.cs" />
-    <Compile Include="OriginalGame.cs" />
     <Compile Include="Pellet.cs" />
     <Compile Include="ScreenHandler.cs" />
     <Compile Include="Snake.cs" />

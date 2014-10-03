@@ -1,0 +1,4 @@
+\\psf\Home\pg3300\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+\\psf\Home\pg3300\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+\\psf\Home\pg3300\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\bin\Debug\SnakeMess.exe
+\\psf\Home\pg3300\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\bin\Debug\SnakeMess.pdb

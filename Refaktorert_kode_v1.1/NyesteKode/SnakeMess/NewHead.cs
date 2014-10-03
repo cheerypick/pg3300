@@ -1,6 +1,6 @@
-﻿namespace SnakeMess
+﻿namespace SnakeNotMess
 {
-	internal class NewHead
+	internal class NewHead : Coordinate
 	{
 		public static Coordinate GetNewHead(Coordinate head, int direction)
 		{

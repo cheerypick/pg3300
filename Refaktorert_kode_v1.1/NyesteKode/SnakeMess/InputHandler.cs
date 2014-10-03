@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	// Game master is master of gamez
 	public class InputHandler

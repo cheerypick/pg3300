@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	internal class Game
 	{
@@ -12,15 +12,9 @@ namespace SnakeMess
 
 		public static void Main(string[] arguments)
 		{
-			// Oppgave 1
-			//     OriginalGame game = new OriginalGame();
-			//     game.runOriginlGame();
-
-
-			//	 Oppgave 2
-
+			//Convert highscore String from file to Int
 			LastHighscore = Convert.ToInt32(GetHighscoreFromFile);
-			// Starter det første spillet
+			// Starts first game
 			RunGame = true;
 			Menu.GameStartMenu();
 

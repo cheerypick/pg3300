@@ -1,42 +1,42 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Linq;
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	public class GameEngine
 	{
 		public static bool SpecialPelletExtraGrow = false;
-		private int _speed = 100;
-		private readonly InputHandler _inputHandler;
 		private readonly int _boardHeight;
 		private readonly int _boardWidth;
 		private readonly Border _border;
+		private readonly InputHandler _inputHandler;
 		private readonly Pellet _pellet;
 		private readonly Random _random = new Random();
 		private readonly Boolean _runGame;
 		private readonly ScreenHandler _screen;
 		private readonly Snake _snake;
 		private readonly Stopwatch _timer;
+		public Boolean IsPaused = false;
 		private int _lastDirectionMoved;
 		private int _level = 1;
 		private int _newDir;
 		private Coordinate _newHead;
 		private int _normalPelletsEatenUntilSpecial;
 		private bool _specialPellet; //unusual pellets
-		public Boolean IsPaused = false;
+		private int _speed = 100;
 
 		public GameEngine()
 		{
-			/*		Default verdier		*/
-			// Første gang spillet skal bestemme når en special pellet skal spawne.
+			/*		Default  	*/
+			//First time game decides when the special pellet will come
 			_normalPelletsEatenUntilSpecial = _random.Next(1, 10);
 			SpecialPelletNumber = 3;
 
-			// Cre
+			// Create border
 			_border = new Border();
 			_border.write();
 			Score = 0;
+
 			// Boolean for running the game
 			_runGame = true;
 
@@ -57,7 +57,7 @@ namespace SnakeMess
 			_pellet = new Pellet(0, 0);
 
 			// Add 4 bodies to snake
-			_snake.addBody(4, 10, 10);
+			_snake.AddBody(4, 10, 10);
 
 
 			// place pellet on board
@@ -75,9 +75,6 @@ namespace SnakeMess
 		public static int SpecialPelletNumber { get; set; }
 
 
-		// Skal være static method
-
-		// StreamWriter writer = new StreamWriter("test.txt");
 		public void RunGame()
 		{
 			// Running the game
@@ -87,7 +84,7 @@ namespace SnakeMess
 				_newDir = _inputHandler.ReadKeys(_lastDirectionMoved, this);
 
 				// Set direction of snake
-				if (_newDir < 4) _snake.setDirection(_newDir);
+				if (_newDir < 4) _snake.SetDirection(_newDir);
 
 				if (IsPaused) continue;
 				// Wait _speed  millis
@@ -99,9 +96,9 @@ namespace SnakeMess
 				// Get new snakehead
 				_newHead = _snake.GetNewHead();
 
-				Menu.DrawInGameScore(Score, _level);
+				Menu.UpperScorePanel(Score, _level);
 
-				// Check if snake is eating pellet, do stuff if it is
+				// Check if snake is eating pellet
 				CheckIfEatingPellet();
 
 				// Check if snake is crashing in border
@@ -111,15 +108,9 @@ namespace SnakeMess
 
 				_screen.UpdateScreen(_snake, _pellet, _newHead);
 
-				// Update last direction. Shark bois 4ever
+				// Update last direction
 				_lastDirectionMoved = _newDir;
 			}
-		}
-
-		// Check if snake is crashing in borders
-		public bool CheckIfBorderCrash()
-		{
-			return Enumerable.Contains(_border.GetBorder(), _newHead);
 		}
 
 		// Check is snake is eating pellet/apple
@@ -127,7 +118,7 @@ namespace SnakeMess
 		{
 			if (!_pellet.CheckIfEatingPellet(_snake)) return;
 
-			// Setter forskjellig score når du spiser normal og special pellet
+			// Sets different scores for normal and special pellets
 
 			if (_specialPellet)
 			{
@@ -140,15 +131,15 @@ namespace SnakeMess
 			}
 
 			// Grow snake
-			_snake.grow = true;
+			_snake.Grow = true;
 
 			// Level up every 10 pellets
 			_level = Score/10 + 1;
 
 			//Increase speed with 10ms each level, starting with 100
-			_speed = 110 - _level*10; 
+			_speed = 110 - _level*10;
 
-			//Special pellets appear randomly
+			//Special pellets appear at random times
 			if (Score%_normalPelletsEatenUntilSpecial == 0)
 			{
 				// New random number generates after special pellet is eaten
