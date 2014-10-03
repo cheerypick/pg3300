@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Coord.cs" />
+    <Compile Include="Coordinate.cs" />
     <Compile Include="NewHead.cs" />
-    <Compile Include="InputReader.cs" />
+    <Compile Include="InputHandler.cs" />
     <Compile Include="GameEngine.cs" />
-    <Compile Include="pellet.cs" />
+    <Compile Include="pel.cs" />
     <Compile Include="ScreenHandler.cs" />
     <Compile Include="Snake.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

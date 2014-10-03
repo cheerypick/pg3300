@@ -15,7 +15,7 @@ namespace SnakeMess
 		}
 
 		// Update screen
-		public void UpdateScreen(Snake snake, Pellet pellet, Coord newHead)
+		public void UpdateScreen(Snake snake, Pellet pellet, Coordinate newHead)
 		{
 
 			// Write over head
@@ -52,10 +52,10 @@ namespace SnakeMess
 		}
 
 		// Draw pellet
-		public static void DrawPellet(Coord coord)
+		public static void DrawPellet(Coordinate coordinate)
 		{
 			Console.ForegroundColor = ConsoleColor.Red;
-			Console.SetCursorPosition(coord.X, coord.Y);
+			Console.SetCursorPosition(coordinate.X, coordinate.Y);
 			Console.Write("$");
 			Console.ForegroundColor = ConsoleColor.Green;
 		}

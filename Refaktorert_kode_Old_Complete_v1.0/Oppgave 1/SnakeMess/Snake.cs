@@ -11,10 +11,7 @@ namespace SnakeMess
 		private int _direction;
 
 		// Snake body
-		private readonly List<Coord> _snakeBody;
-
-		// Coords for head and new Head
-		private Coord newHead;
+		private readonly List<Coordinate> _snakeBody;
 
 		// Boolean for letting snake grow
 		public bool Grow { get; set; }
@@ -22,7 +19,7 @@ namespace SnakeMess
 		// Constructor
 		public Snake()
 		{
-			_snakeBody = new List<Coord>();
+			_snakeBody = new List<Coordinate>();
 			Grow = true;
 		}
 
@@ -37,37 +34,37 @@ namespace SnakeMess
 		{
 			for (int i = 0; i < bodies; i++)
 			{
-				_snakeBody.Add(new Coord(xPosition, yPosition));
+				_snakeBody.Add(new Coordinate(xPosition, yPosition));
 			}
 		}
 
 		// Return snakes coords
-		public List<Coord> GetCoords()
+		public List<Coordinate> GetCoords()
 		{
 			return _snakeBody;
 		}
 
 		// Snake is getting head
-		public Coord GetHead()
+		public Coordinate GetHead()
 		{
 			return _snakeBody.Last();
 		}
 
 		// Finding the tail of the snake
-		public Coord GetTail()
+		public Coordinate GetTail()
 		{
 			return _snakeBody.First();
 		}
 
 		// Check if snake collides in itself.
-		public Boolean CheckSelfCannibalism(InputReader gm, Coord newHead)
+		public Boolean CheckSelfCannibalism(InputHandler gm, Coordinate newHead)
 		{
 			return GetCoords().Any(x => x.X == newHead.X && x.Y == newHead.Y);
 		}
 
 
 		// Method for adding new head to the right side and direction of snake
-		public Coord GetNewHead()
+		public Coordinate GetNewHead()
 		{
 			// Get head
 			return NewHead.GetNewHead(_snakeBody.Last(), _direction);

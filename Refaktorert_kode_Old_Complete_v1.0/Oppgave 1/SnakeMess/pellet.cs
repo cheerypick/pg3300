@@ -7,20 +7,20 @@ namespace SnakeMess
 	public class Pellet
 	{
 		private int _x, _y; // Coordinates, these may be removed
-		private Coord _pelletCoord; // Real coordinates
+		private Coordinate _pelletCoordinate; // Real coordinates
 
 		// Constructor
 		public Pellet(int x, int y)
 		{
 			_x = x;
 			_y = y;
-			_pelletCoord = new Coord(x, y);
+			_pelletCoordinate = new Coordinate(x, y);
 		}
 
 		// Check if snake is eating pellet
 		public Boolean CheckIfEatingPellet(Snake snake)
 		{
-			return (snake.GetNewHead().X == _pelletCoord.X && snake.GetNewHead().Y == _pelletCoord.Y);
+			return (snake.GetNewHead().X == _pelletCoordinate.X && snake.GetNewHead().Y == _pelletCoordinate.Y);
 		}
 
 
@@ -40,9 +40,9 @@ namespace SnakeMess
 
 				// Place if spot is safe, place pellet
 				if (!foundSpot) continue;
-				ScreenHandler.DrawPellet(new Coord(_x, _y));
+				ScreenHandler.DrawPellet(new Coordinate(_x, _y));
 
-				_pelletCoord = new Coord(_x, _y);
+				_pelletCoordinate = new Coordinate(_x, _y);
 				break;
 			}
 		}

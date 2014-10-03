@@ -3,11 +3,11 @@
 	// Controls the head
 	class NewHead
 	{
-		public static Coord GetNewHead(Coord head, int direction)
+		public static Coordinate GetNewHead(Coordinate head, int direction)
 		{
 			// Creating a new head. The head is used to see if the snake is eating itself, 
 			// eating pellets og crashing into a wall.
-			var newHead = new Coord(head);
+			var newHead = new Coordinate(head);
 
 			// Where new head is created is decided by direction
 			switch (direction)
