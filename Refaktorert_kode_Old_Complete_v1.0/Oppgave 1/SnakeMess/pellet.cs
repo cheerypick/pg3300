@@ -4,16 +4,15 @@ using System.Linq;
 namespace SnakeMess
 {
 	// Class for controling the pellets
-	public class Pellet
+	public class Pellet : Coordinate
 	{
-		private int _x, _y; // Coordinates, these may be removed
 		private Coordinate _pelletCoordinate; // Real coordinates
 
 		// Constructor
 		public Pellet(int x, int y)
 		{
-			_x = x;
-			_y = y;
+			X = x;
+			Y = y;
 			_pelletCoordinate = new Coordinate(x, y);
 		}
 
@@ -32,17 +31,17 @@ namespace SnakeMess
 			// Try to place in a new spot
 			while (true)
 			{
-				_x = random.Next(1, boardW - 1);
-				_y = random.Next(4, boardH - 1);
+				X = random.Next(1, boardW - 1);
+				Y = random.Next(4, boardH - 1);
 
 				// This made itself, rofl, idk. Kinda makes sense
-				var foundSpot = snake.GetCoords().All(coord => _x != coord.X || _y != coord.Y);
+				var foundSpot = snake.GetCoords().All(coord => Y != coord.X || Y != coord.Y);
 
 				// Place if spot is safe, place pellet
 				if (!foundSpot) continue;
-				ScreenHandler.DrawPellet(new Coordinate(_x, _y));
+				ScreenHandler.DrawPellet(new Coordinate(X, Y));
 
-				_pelletCoordinate = new Coordinate(_x, _y);
+				_pelletCoordinate = new Coordinate(X, Y);
 				break;
 			}
 		}

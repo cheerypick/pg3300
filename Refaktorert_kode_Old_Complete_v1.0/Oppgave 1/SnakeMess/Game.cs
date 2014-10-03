@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace SnakeMess
+﻿namespace SnakeMess
 {
-	class Class1
+	internal class Game
 	{
+		public static void Main(string[] arguments)
+		{
+			var snake = new GameEngine();
+			snake.RunGame();
+		}
 	}
 }

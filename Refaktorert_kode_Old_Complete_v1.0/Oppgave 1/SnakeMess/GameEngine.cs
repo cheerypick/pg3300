@@ -14,6 +14,8 @@ namespace SnakeMess
 		private int _lastDirectionMoved;
 		private Coordinate _newHead;
 		private Stopwatch _timer;
+		public bool IsPaused { get; set; }
+
 
 		public GameEngine()
 		{
@@ -37,24 +39,21 @@ namespace SnakeMess
 			// Add 4 bodies to snake
 			_snake.AddBody(4, 10, 10);
 
-			// place pellet in world
+			// place pellet on board
 			_pellet.PlacePellet(_snake, _boardHeight, _boardWidth);
 
+			//Create and start a timer
 			_timer = new Stopwatch();
-
 			_timer.Start();
 
 		}
-
-		public bool IsPaused { get; set; }
 
 		public void RunGame()
 		{
 			// The loop that runs the game
 			while (true)
 			{
-				
-
+			
 				//This loop runs as fast as possible, constantly checking input
 				int newDir = _inputHandler.ReadKeys(_lastDirectionMoved, this);
 
@@ -88,11 +87,7 @@ namespace SnakeMess
 		}
 
 
-		public static void Main(string[] arguments)
-		{
-			var snake = new GameEngine();
-			snake.RunGame();
-		}
+		
 
 		// Checking if the snake is colliding with the border.
 		public bool CheckIfBorderCrash()
