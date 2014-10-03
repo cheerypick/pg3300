@@ -3,7 +3,7 @@
 namespace SnakeMess
 {
 	// Game master is master of gamez
-	public class InputReader
+	public class InputHandler
 	{
 		private ConsoleKeyInfo _inputKey;
 
@@ -14,7 +14,7 @@ namespace SnakeMess
 			if (Console.KeyAvailable)
 			{
 				_inputKey = Console.ReadKey(true);
-				if (_inputKey.Key == ConsoleKey.Spacebar) gameEngine.isPaused = !gameEngine.isPaused;
+				if (_inputKey.Key == ConsoleKey.Spacebar) gameEngine.IsPaused = !gameEngine.IsPaused;
 				Console.CursorVisible = false; // Dont want to see the cursor
 			}
 

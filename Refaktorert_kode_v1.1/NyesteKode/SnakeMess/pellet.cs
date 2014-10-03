@@ -52,7 +52,6 @@ namespace SnakeMess {
 
 				var foundSpot = snake.getCoords().All(coord => _x != coord.X || _y != coord.Y);
 
-				// Place if spot is safe, place pellet
 				if (!foundSpot) continue;
 				ScreenHandler.DrawSpecialPellet(new Coordinate(_x, _y));
 
@@ -61,7 +60,6 @@ namespace SnakeMess {
 			}
 		}
 
-        // u get the idea
         public Coordinate GetCoords() {
             return _pelletCoordinate;
         }

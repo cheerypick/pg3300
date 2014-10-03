@@ -7,7 +7,7 @@ namespace SnakeMess
 	{
 		//	public static bool runGame = true;
 		// Henter fila med highscore.
-		private static readonly string _getHighscoreFromFile = File.ReadAllText(@"..\..\score.txt");
+		private static readonly string GetHighscoreFromFile = File.ReadAllText(@"..\..\score.txt");
 		public static bool RunGame { get; set; }
 		// Score player har nå.
 		public static int LastHighscore { get; set; }
@@ -21,7 +21,7 @@ namespace SnakeMess
 
 			//	 Oppgave 2
 
-			LastHighscore = Convert.ToInt32(_getHighscoreFromFile);
+			LastHighscore = Convert.ToInt32(GetHighscoreFromFile);
 			// Starter det første spillet
 			RunGame = true;
 			Menu.GameStartMenu();

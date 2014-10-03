@@ -52,7 +52,7 @@ namespace SnakeMess {
         }
 
         // Check if snake has sniffed fuel
-        public Boolean CheckSelfCannibalism(InputReader gm, Coordinate newHead) {
+        public Boolean CheckSelfCannibalism(InputHandler gm, Coordinate newHead) {
             return getCoords().Any(x => x.X == newHead.X && x.Y == newHead.Y);
         }
 
