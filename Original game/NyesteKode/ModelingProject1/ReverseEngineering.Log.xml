@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2014-10-03T17:48:38" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '61ea4c30-ee19-491e-a6db-956361f81c52' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess' -  (Package)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Border' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Border::_border' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Border::Border' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Border::CheckCollision' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Border::CheckCollision::newHead' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Border::GetBorder' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Border::write' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Coordinate' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Coordinate::Coordinate' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Coordinate::Coordinate::input' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Coordinate::Coordinate::x' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Coordinate::Coordinate::y' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Coordinate::X' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Coordinate::Y' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Game' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Game::Game' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Game::GetHighscoreFromFile' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Game::LastHighscore' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Game::Main' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Game::Main::arguments' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Game::RunGame' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_boardHeight' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_boardWidth' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_border' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_inputHandler' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_lastDirectionMoved' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_level' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_newDir' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_newHead' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_normalPelletsEatenUntilSpecial' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_pellet' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_random' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_runGame' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_screen' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_snake' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_specialPellet' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_speed' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::_timer' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::CheckIfEatingPellet' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::GameEngine' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::IsPaused' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::RunGame' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::Score' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::SpecialPelletExtraGrow' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::GameEngine::SpecialPelletNumber' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::InputHandler' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::InputHandler::_inputKey' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::InputHandler::InputHandler' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::InputHandler::ReadKeys' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::InputHandler::ReadKeys::gameEngine' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::InputHandler::ReadKeys::lastDirection' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Level' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Level::InitialSpeed' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Level::Level' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Level::Level::number' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Level::LevelNumber' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Level::MsSpeedDifference' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Level::PelletsToNewLevel' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::CheckForHighScore' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::GameOver' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::GameOver::snake' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::GameStartMenu' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::Menu' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::UpperScorePanel' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::UpperScorePanel::level' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Menu::UpperScorePanel::showScore' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::NewHead' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::NewHead::GetNewHead' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::NewHead::GetNewHead::direction' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::NewHead::GetNewHead::head' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::NewHead::NewHead' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::_pelletCoordinate' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::CheckIfEatingPellet' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::CheckIfEatingPellet::snake' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::GetCoords' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::Pellet' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::Pellet::x' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::Pellet::y' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlacePellet' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlacePellet::boardH' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlacePellet::boardW' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlacePellet::snake' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlaceSpecialPellet' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlaceSpecialPellet::boardH' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlaceSpecialPellet::boardW' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Pellet::PlaceSpecialPellet::snake' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::_count' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::DrawPellet' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::DrawPellet::coordinate' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::DrawSpecialPellet' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::DrawSpecialPellet::coordinate' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::GetHeight' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::GetWidth' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::ScreenHandler' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::UpdateScreen' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::UpdateScreen::newHead' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::UpdateScreen::pellet' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::UpdateScreen::snake' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::ScreenHandler::WriteStartUp' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake' -  (Class)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::_direction' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::_snakeBody' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::AddBody' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::AddBody::bodies' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::AddBody::xPosition' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::AddBody::yPosition' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::CheckSelfCannibalism' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::CheckSelfCannibalism::gm' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::CheckSelfCannibalism::newHead' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::GetCoords' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::GetHead' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::GetNewHead' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::GetTail' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::Grow' -  (Property)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::SetDirection' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::SetDirection::newDir' -  (Parameter)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SnakeNotMess::Snake::Snake' -  (Operation)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections' -  (Package)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;Coordinate‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ConsoleKeyInfo' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Diagnostics' -  (Package)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Diagnostics::Stopwatch' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Random' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::SnakeNotMess::NewHead to ModelingProject1::SnakeNotMess::Coordinate (Generalization)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::SnakeNotMess::Pellet to ModelingProject1::SnakeNotMess::Coordinate (Generalization)" />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="High" Text="(11) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="High" Text="(5) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-10-03T17:48:42" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>
