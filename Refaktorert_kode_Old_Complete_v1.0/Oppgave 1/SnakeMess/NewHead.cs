@@ -1,7 +1,7 @@
 ﻿namespace SnakeMess
 {
 	// Controls the head
-	class NewHead
+	class NewHead : Coordinate
 	{
 		public static Coordinate GetNewHead(Coordinate head, int direction)
 		{

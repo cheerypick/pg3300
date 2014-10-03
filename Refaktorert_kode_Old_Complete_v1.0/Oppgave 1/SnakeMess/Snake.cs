@@ -32,7 +32,7 @@ namespace SnakeMess
 		// Add bodies to snake
 		public void AddBody(int bodies, int xPosition, int yPosition)
 		{
-			for (int i = 0; i < bodies; i++)
+			for (var i = 0; i < bodies; i++)
 			{
 				_snakeBody.Add(new Coordinate(xPosition, yPosition));
 			}
