@@ -4,9 +4,8 @@ using System;
 namespace SnakeNotMess{
 	internal class ScreenHandler{
 
-		// Blir brukt til å telle opp til 3 da du spiser en special pellet.
+		// Used for counting to 3 when you eat a special pellet.
 		private int _count;
-		// Method for preparing
 
 		// Update screen
 		public void UpdateScreen(Snake snake, Pellet pellet, Coordinate newHead)
@@ -28,20 +27,20 @@ namespace SnakeNotMess{
 			Console.SetCursorPosition(newHead.X, newHead.Y);
 			Console.Write("@");
 
-			// Finner ut om snake har spist en normal eller special pellet.
-			// Skal vokse 2 om den spiser special og 1 om den spiser normal.
+			// Find out if you ate a normal or a special pellet.
+			// Will grow 3 if special, and 1 if normal.
 			if (GameEngine.SpecialPelletExtraGrow)
 			{
 				_count++;
 				if (_count == GameEngine.SpecialPelletNumber)
-					// Vokser 3 ganger når du spiser en special pellet, pga du får 3 poeng for hver special pellet.
+					// Snake grow by 3 when you eat a special pellet. Its the same as the amout of point it gives.
 				{
 					_count = 0;
 					snake.Grow = false;
 					GameEngine.SpecialPelletExtraGrow = false;
 				}
 			}
-				// Viss du spiser vanlig pellet, så slutter snake å vokse etter 1 runde med voksing.
+				// If you eat a normal pellet, then the snake will grow only by 1.
 			else if (GameEngine.SpecialPelletExtraGrow == false)
 			{
 				snake.Grow = false;
@@ -49,19 +48,17 @@ namespace SnakeNotMess{
 		}
 
 
-		// smoke some weed
 		public int GetHeight()
 		{
 			return Console.WindowHeight;
 		}
 
-		// .. and eat a burga
 		public int GetWidth()
 		{
 			return Console.WindowWidth;
 		}
 
-		// Tegner vanlig Pellet
+		// Draw normal pellet
 		public static void DrawPellet(Coordinate coordinate)
 		{
 			Console.ForegroundColor = ConsoleColor.Red;
@@ -71,7 +68,7 @@ namespace SnakeNotMess{
 		}
 
 
-		// Tegner special Pellet
+		// Draw special pellet
 		public static void DrawSpecialPellet(Coordinate coordinate)
 		{
 			Console.ForegroundColor = ConsoleColor.White;

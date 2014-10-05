@@ -29,7 +29,7 @@ namespace SnakeNotMess{
 				X = random.Next(1, boardW - 1);
 				Y = random.Next(4, boardH - 1);
 
-				// This made itself, rofl, idk. Kinda makes sense
+				// Check if pellet spawn on snake.
 				var foundSpot = snake.GetCoords().All(coord => X != coord.X || Y != coord.Y);
 
 				// Place if spot is safe, place pellet
