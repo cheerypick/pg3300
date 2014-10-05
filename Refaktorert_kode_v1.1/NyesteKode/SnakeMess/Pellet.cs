@@ -2,6 +2,8 @@
 using System.Linq;
 
 namespace SnakeNotMess{
+
+	// Keeps control of the coordinates
 	public class Pellet : Coordinate{
 		private Coordinate _pelletCoordinate; // Real coordinates
 
@@ -39,6 +41,7 @@ namespace SnakeNotMess{
 			}
 		}
 
+		// Method for placing special pellets
 		public void PlaceSpecialPellet(Snake snake, int boardH, int boardW){
 			var random = new Random();
 

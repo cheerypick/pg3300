@@ -2,7 +2,7 @@
 
 namespace SnakeNotMess
 {
-	// Game master is master of gamez
+	// Class for controling the input from the user.
 	public class InputHandler{
 		private ConsoleKeyInfo _inputKey;
 

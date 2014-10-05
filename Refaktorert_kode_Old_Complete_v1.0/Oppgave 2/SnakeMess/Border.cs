@@ -5,27 +5,27 @@ using System.Linq;
 namespace SnakeMess {
     class Border
     {
-        private List<Coord> border;
+        private readonly List<Coord> _border;
 
         public Border()
         {
-            border = new List<Coord>();
+            _border = new List<Coord>();
 
             for (int i = 0; i < Console.WindowWidth - 1; i++)
             {
-                border.Add(new Coord(i, 3));
-                border.Add(new Coord(i, Console.WindowHeight - 1));
+                _border.Add(new Coord(i, 3));
+                _border.Add(new Coord(i, Console.WindowHeight - 1));
             }
 
             for (int i = 3; i < Console.WindowHeight - 1; i++)
             {
-                border.Add(new Coord(0, i));
-                border.Add(new Coord(Console.WindowWidth - 1, i));
+                _border.Add(new Coord(0, i));
+                _border.Add(new Coord(Console.WindowWidth - 1, i));
             }
         }
-        public void write(){
+        public void Write(){
 
-            foreach(Coord borderCoord in border)
+            foreach(Coord borderCoord in _border)
             {
                 Console.SetCursorPosition(borderCoord.X, borderCoord.Y);
                 Console.Write("*");
@@ -34,12 +34,12 @@ namespace SnakeMess {
 
       public List<Coord> GetBorder()
       {
-          return border;
+          return _border;
       }
 
-        public Boolean checkCollision(Coord newHead)
+        public Boolean CheckCollision(Coord newHead)
         {
-            return border.Any(borderCoord => newHead.X == borderCoord.X && newHead.Y == borderCoord.Y);
+            return _border.Any(borderCoord => newHead.X == borderCoord.X && newHead.Y == borderCoord.Y);
         }
     }
 }

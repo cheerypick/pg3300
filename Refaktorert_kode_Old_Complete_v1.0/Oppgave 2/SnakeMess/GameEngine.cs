@@ -36,7 +36,7 @@ namespace SnakeMess {
 
             // Cre
             border = new Border();
-            border.write();
+            border.Write();
             Score = 0;
             // Boolean for running the game
             runGame = true;
@@ -101,7 +101,7 @@ namespace SnakeMess {
                 CheckIfEatingPellet();
 
                 // Check if snake is crashing in border
-                if (border.checkCollision(_newHead) || snake.CheckSelfCannibalism(_inputReader, _newHead)) break;
+                if (border.CheckCollision(_newHead) || snake.CheckSelfCannibalism(_inputReader, _newHead)) break;
 
                 // Update screen
 

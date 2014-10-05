@@ -2,6 +2,7 @@
 {
 	internal class NewHead : Coordinate
 	{
+
 		public static Coordinate GetNewHead(Coordinate head, int direction)
 		{
 			var newHead = new Coordinate(head);

@@ -7,3 +7,5 @@ E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\Nye
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.pdb
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\bin\Debug\SnakeMess.exe
 E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\bin\Debug\SnakeMess.pdb
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\Git\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\Git\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.pdb

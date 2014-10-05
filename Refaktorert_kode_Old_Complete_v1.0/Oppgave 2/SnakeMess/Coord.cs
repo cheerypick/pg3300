@@ -1,6 +1,7 @@
 ﻿
 namespace SnakeMess {
 
+	// Keeps control of the coordinates
         public class Coord {
 
         public int X;

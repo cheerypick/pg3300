@@ -3,6 +3,8 @@ using System.IO;
 using System.Windows.Forms;
 
 namespace SnakeNotMess{
+	
+	// Class the keeps control of the menus
 	internal class Menu{
 		public static void GameStartMenu()	{
 			while (true){

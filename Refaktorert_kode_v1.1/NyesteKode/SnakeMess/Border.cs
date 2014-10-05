@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace SnakeNotMess{
+
+	// Controls the borders of the game.
 	internal class Border{
 		private readonly List<Coordinate> _border;
 

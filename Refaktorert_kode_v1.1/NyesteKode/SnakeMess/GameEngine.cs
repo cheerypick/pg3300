@@ -4,6 +4,9 @@ using System.Diagnostics;
 
 namespace SnakeNotMess
 {
+
+	// The class that creates object and builds the game.
+
 	public class GameEngine{
 		public static bool SpecialPelletExtraGrow = false;  // Snake grows from special pellet
         private readonly int _boardHeight, _boardWidth;     // Height and width of board
@@ -70,9 +73,10 @@ namespace SnakeNotMess
 			_timer.Start();
 		}
 
+		// Current score.
 		public static int Score { get; set; }
 
-		// Hvor mange poeng og hvor mye snake skal vokse når du spiser en special pellet.
+		// How many points and how much the snake will grown then you eat a special pellet.
 		public static int SpecialPelletNumber { get; set; }
 
 
