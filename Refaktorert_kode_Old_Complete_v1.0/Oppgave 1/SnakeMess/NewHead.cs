@@ -1,4 +1,4 @@
-﻿namespace SnakeNotMess
+﻿namespace SnakeMess
 {
 	// Controls the head
 	class NewHead : Coordinate

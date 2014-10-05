@@ -1,4 +1,4 @@
-﻿namespace SnakeNotMess
+﻿namespace SnakeMess
 {
 
 	// Keeps track of the coordinates in the game

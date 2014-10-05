@@ -2,7 +2,7 @@
 
 // This handles output
 
-namespace SnakeNotMess
+namespace SnakeMess
 {
 	internal class ScreenHandler
 	{

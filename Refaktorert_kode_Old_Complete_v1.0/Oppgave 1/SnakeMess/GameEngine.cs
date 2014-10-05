@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace SnakeNotMess
+namespace SnakeMess
 {
 	// Execute the game. 
 	public class GameEngine

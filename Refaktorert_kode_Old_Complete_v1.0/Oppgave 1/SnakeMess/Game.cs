@@ -1,4 +1,4 @@
-﻿namespace SnakeNotMess
+﻿namespace SnakeMess
 {
 	internal class Game
 	{
