@@ -59,6 +59,7 @@ namespace SnakeNotMess{
 					case "a": {
 						MessageBox.Show(
 							"Westerdals Snake. \nCreated by Kim Frode Flaethe, Idar Tjomstøl Vassdal, Katrine Orlova\n(c)2014");
+						continue;
 					}
 						break;
 					default:
