@@ -3,27 +3,25 @@
 namespace SnakeNotMess
 {
 	// Game master is master of gamez
-	public class InputHandler
-	{
+	public class InputHandler{
 		private ConsoleKeyInfo _inputKey;
 
 		// Method for reading keys
-		public int ReadKeys(int lastDirection, GameEngine gameEngine)
-		{
+		public int ReadKeys(int lastDirection, GameEngine gameEngine){
+
 			// If key is pressed, read it
-			if (Console.KeyAvailable)
-			{
+			if (Console.KeyAvailable)	{
 				_inputKey = Console.ReadKey(true);
 				if (_inputKey.Key == ConsoleKey.Spacebar) gameEngine.IsPaused = !gameEngine.IsPaused;
 				Console.CursorVisible = false; // Dont want to see the cursor
 			}
 
 			// Return diffrent ints for different inputs from different keys, different
-			switch (_inputKey.Key)
-			{
-				case ConsoleKey.Escape: // THIS IS FOR ESCAPE DO NOT REMOVE ME
+			switch (_inputKey.Key){
+				case ConsoleKey.Escape: 
 					Environment.Exit(1);
-					return lastDirection;
+			        return -1;
+
 				case ConsoleKey.UpArrow: // 0
 					return lastDirection != 2 ? 0 : lastDirection;
 

@@ -1,19 +1,12 @@
 ﻿// This handles output
 using System;
 
-namespace SnakeNotMess
-{
-	internal class ScreenHandler
-	{
+namespace SnakeNotMess{
+	internal class ScreenHandler{
+
 		// Blir brukt til å telle opp til 3 da du spiser en special pellet.
 		private int _count;
 		// Method for preparing
-		public void WriteStartUp()
-		{
-			Console.CursorVisible = false; // Dont want to see the cursor
-			Console.ForegroundColor = ConsoleColor.Green; // Console color
-			Console.SetCursorPosition(10, 10); // Set start poisition
-		}
 
 		// Update screen
 		public void UpdateScreen(Snake snake, Pellet pellet, Coordinate newHead)

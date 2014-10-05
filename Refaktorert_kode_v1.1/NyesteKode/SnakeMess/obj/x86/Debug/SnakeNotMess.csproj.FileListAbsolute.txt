@@ -3,3 +3,7 @@
 \\psf\Home\pg3300\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\bin\Debug\SnakeMess.exe
 \\psf\Home\pg3300\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\bin\Debug\SnakeMess.pdb
 \\psf\Home\pg3300\Refaktorert_kode_v1.1\NyesteKode\SnakeMess\obj\x86\Debug\SnakeNotMess.csprojResolveAssemblyReference.cache
+E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.exe
+E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\bin\Debug\SnakeMess.exe
+E:\NITH\PG 3300 [Programvarearkitektur]\Innlevering 01\Refaktorert_kode_v0.3\NyesteKode\SnakeMess\bin\Debug\SnakeMess.pdb

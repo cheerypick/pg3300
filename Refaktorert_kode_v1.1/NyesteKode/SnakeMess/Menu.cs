@@ -2,14 +2,10 @@
 using System.IO;
 using System.Windows.Forms;
 
-namespace SnakeNotMess
-{
-	internal class Menu
-	{
-		public static void GameStartMenu()
-		{
-			while (true)
-			{
+namespace SnakeNotMess{
+	internal class Menu{
+		public static void GameStartMenu()	{
+			while (true){
 				//Write start menu
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.SetCursorPosition(15, 5);
@@ -32,40 +28,35 @@ namespace SnakeNotMess
 
 				//Ignore null input issues
 				if (input == null) continue;
-				switch (input.ToLower()) //ignore case
-				{
-					case "x": //Exit
-					{
+				switch (input.ToLower()){
+                        // Exit
+					case "x": {
 						Game.RunGame = false;
 						Environment.Exit(1);
 						continue;
 					}
-					case "p": //Play
-					{
+                    //Play
+					case "p": {
 						Game.RunGame = true;
 						break;
 					}
-
-					case "h": //Highscore
-					{
+                    //Highscore
+					case "h": {
 						MessageBox.Show("Highscore: " + Game.LastHighscore);
 						continue;
 					}
-
-					case "r": //Rules
-					{
+                    //Rules
+					case "r": {
 						Console.Clear();
 						Game.RunGame = false;
 						MessageBox.Show(
-							"Use arrows to move snake. \nSpecial pellet appears randomly and gives random point amount. \nSpeed increases each level.");
-						GameStartMenu();
+							"Use arrows to move snake. \nSpecial pellet appears randomly and gives 3 points. \nSpeed increases each level.");
 						continue;
 					}
-					case "a": //About
-					{
+                    //About
+					case "a": {
 						MessageBox.Show(
 							"Westerdals Snake. \nCreated by Kim Frode Flaethe, Idar Tjomstøl Vassdal, Katrine Orlova\n(c)2014");
-						GameStartMenu();
 					}
 						break;
 					default:
