@@ -1,6 +1,7 @@
-﻿
-namespace SnakeMess
+﻿namespace SnakeNotMess
 {
+
+	// Keeps track of the coordinates in the game
 	public class Coordinate
 	{
 		public int X;

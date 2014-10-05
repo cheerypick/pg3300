@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	// Execute the game. 
 	public class GameEngine
@@ -13,7 +13,7 @@ namespace SnakeMess
 		private readonly InputHandler _inputHandler;
 		private int _lastDirectionMoved;
 		private Coordinate _newHead;
-		private Stopwatch _timer;
+		private readonly Stopwatch _timer;
 		public bool IsPaused { get; set; }
 
 

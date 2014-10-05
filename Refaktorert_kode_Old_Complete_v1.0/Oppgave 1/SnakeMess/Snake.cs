@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	// Building snake
 	public class Snake

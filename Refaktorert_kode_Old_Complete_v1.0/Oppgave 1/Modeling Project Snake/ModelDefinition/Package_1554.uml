@@ -2,12 +2,12 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="de372272-e59f-4b4b-9fdf-fa6d515d3b8b"
-  name="SnakeMess"
+  name="SnakeNotMess"
   visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <referencesInternal>
     <reference
       Id="14ab9965-ae11-427b-b2bb-c2d45c328343"
-      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSnakeMess"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSnakeNotMess"
       tag="ViewCode" />
   </referencesInternal>
   <packagedElements>
@@ -21,7 +21,7 @@
         <referencesInternal>
           <reference
             Id="e604fba4-f02a-4114-af75-a6a207dc7c99"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -121,7 +121,7 @@
             <referencesInternal>
               <reference
                 Id="4811d5de-7635-460e-9414-2ede47c9aba6"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler Member%3D_inputKey"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler Member%3D_inputKey"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -187,7 +187,7 @@
             <referencesInternal>
               <reference
                 Id="32c936fe-045d-47a2-a6e8-9a7b93a42e3f"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler Member%3D(Name%3DReadKeys OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler Member%3D(Name%3DReadKeys OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -261,7 +261,7 @@
                   <referencesInternal>
                     <reference
                       Id="4f408d03-5d72-4bf8-8bd3-493c7cb83df5"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler Member%3D(Name%3DReadKeys OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine)]) ParameterIdentifier%3DlastDirection"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler Member%3D(Name%3DReadKeys OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine)]) ParameterIdentifier%3DlastDirection"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -280,7 +280,7 @@
                   <referencesInternal>
                     <reference
                       Id="40b16724-047b-41a2-928e-8283c6884cdb"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler Member%3D(Name%3DReadKeys OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine)]) ParameterIdentifier%3DgameEngine"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler Member%3D(Name%3DReadKeys OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine)]) ParameterIdentifier%3DgameEngine"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -304,7 +304,7 @@
             <referencesInternal>
               <reference
                 Id="cd1a1dfe-9a60-4943-940f-7bedce495216"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler Member%3D.ctor"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -371,7 +371,7 @@
         <referencesInternal>
           <reference
             Id="5079b5bc-6f56-4b23-a46a-d4ebc24a7778"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -583,7 +583,7 @@
             <referencesInternal>
               <reference
                 Id="021b1b5b-7fa6-4fc3-9441-e903fcb22c5e"
-                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3DIsPaused"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3DIsPaused"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -664,7 +664,7 @@
             <referencesInternal>
               <reference
                 Id="93343d03-9a3f-4084-a213-2b3ad8fce3c2"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_boardHeight"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_boardHeight"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -731,7 +731,7 @@
             <referencesInternal>
               <reference
                 Id="90b9870a-e36a-42d5-857e-616663836e38"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_boardWidth"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_boardWidth"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -798,7 +798,7 @@
             <referencesInternal>
               <reference
                 Id="ec853be4-d1d6-4b45-8afe-ad1294d2db81"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_inputHandler"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_inputHandler"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -865,7 +865,7 @@
             <referencesInternal>
               <reference
                 Id="487fdac4-b58c-48c0-897e-3cb5473b37c2"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_lastDirectionMoved"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_lastDirectionMoved"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -932,7 +932,7 @@
             <referencesInternal>
               <reference
                 Id="7e3e3820-7dc5-45c8-9380-de5579dca55a"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_newHead"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_newHead"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -999,7 +999,7 @@
             <referencesInternal>
               <reference
                 Id="1cafd1bb-a764-45f5-9cce-4b4f72f644c8"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_pellet"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_pellet"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1066,7 +1066,7 @@
             <referencesInternal>
               <reference
                 Id="59f46645-ad76-48d6-b561-bf0f7979ccec"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_screen"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_screen"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1133,7 +1133,7 @@
             <referencesInternal>
               <reference
                 Id="1b780e6c-1f5c-444c-9e22-5f165afac378"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_snake"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_snake"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1200,7 +1200,7 @@
             <referencesInternal>
               <reference
                 Id="3da9bc23-72a5-4de8-8576-7a7bec60003b"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D_timer"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D_timer"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1266,7 +1266,7 @@
             <referencesInternal>
               <reference
                 Id="5f7a210f-4b42-4975-91ee-db7b5f89c242"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3DCheckIfBorderCrash"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3DCheckIfBorderCrash"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1345,7 +1345,7 @@
             <referencesInternal>
               <reference
                 Id="ef90d766-1d60-4752-97ee-c1db9c2941a6"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3DCheckIfEatingPellet"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3DCheckIfEatingPellet"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1410,7 +1410,7 @@
             <referencesInternal>
               <reference
                 Id="3d211256-f547-4a9c-90a5-9fbd83fb9e41"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3DRunGame"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3DRunGame"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1475,7 +1475,7 @@
             <referencesInternal>
               <reference
                 Id="06346a07-a996-4593-aaf9-6a4138c18c6d"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGameEngine Member%3D.ctor"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGameEngine Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1543,7 +1543,7 @@
         <referencesInternal>
           <reference
             Id="36a9c48c-f159-4ce6-b974-2b8e72200699"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DNewHead"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DNewHead"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -1611,7 +1611,7 @@
             <referencesInternal>
               <reference
                 Id="da061815-635d-41e7-bdb6-97ad54f6cab7"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DNewHead Member%3D(Name%3DGetNewHead OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DNewHead Member%3D(Name%3DGetNewHead OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1685,7 +1685,7 @@
                   <referencesInternal>
                     <reference
                       Id="680e80e9-e7b6-4b2f-9022-30918117a668"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DNewHead Member%3D(Name%3DGetNewHead OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dhead"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DNewHead Member%3D(Name%3DGetNewHead OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dhead"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -1704,7 +1704,7 @@
                   <referencesInternal>
                     <reference
                       Id="baa4e851-0577-4b21-9b6c-c0f15dd9d8e9"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DNewHead Member%3D(Name%3DGetNewHead OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Ddirection"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DNewHead Member%3D(Name%3DGetNewHead OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Ddirection"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -1728,7 +1728,7 @@
             <referencesInternal>
               <reference
                 Id="e19a9e65-b228-4cf0-b6ed-2d17e5fe5707"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DNewHead Member%3D.ctor"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DNewHead Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1795,7 +1795,7 @@
         <referencesInternal>
           <reference
             Id="463f3170-1a33-4a80-b7e1-8734ff4ec07e"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -1855,7 +1855,7 @@
             <referencesInternal>
               <reference
                 Id="976668d1-c0d6-4967-8472-3e9de67b047c"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate Member%3DX"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate Member%3DX"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1921,7 +1921,7 @@
             <referencesInternal>
               <reference
                 Id="e13a7ea1-2fc9-4a24-9911-715b545ba94b"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate Member%3DY"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate Member%3DY"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1987,7 +1987,7 @@
             <referencesInternal>
               <reference
                 Id="be8c48c4-a52d-4236-b939-93899e7bef38"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2049,7 +2049,7 @@
                   <referencesInternal>
                     <reference
                       Id="1d64b414-0dd1-48dd-a18f-28bb184dd3af"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dx"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dx"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2068,7 +2068,7 @@
                   <referencesInternal>
                     <reference
                       Id="fe06ffb7-c8b1-4008-9efe-1b049876f0b5"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dy"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dy"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2092,7 +2092,7 @@
             <referencesInternal>
               <reference
                 Id="cf9dca5d-a5c5-4865-8e67-fe8b0e1a6e8b"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2154,7 +2154,7 @@
                   <referencesInternal>
                     <reference
                       Id="003e5dd9-3a92-4599-a4e8-76cff567be2b"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)]) ParameterIdentifier%3Dinput"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)]) ParameterIdentifier%3Dinput"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2180,7 +2180,7 @@
         <referencesInternal>
           <reference
             Id="e5e4fc1b-c837-4669-bc26-5419026d5e21"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -2251,7 +2251,7 @@
             <referencesInternal>
               <reference
                 Id="480e30e7-2869-4b79-9ddf-059da367b18f"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D_pelletCoordinate"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D_pelletCoordinate"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2317,7 +2317,7 @@
             <referencesInternal>
               <reference
                 Id="8b4fcdbe-6fca-4471-92d5-711f2b967343"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2379,7 +2379,7 @@
                   <referencesInternal>
                     <reference
                       Id="bd16e04f-9e8a-419a-9783-f9aa4db34993"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dx"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dx"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2398,7 +2398,7 @@
                   <referencesInternal>
                     <reference
                       Id="a6fce08e-e74d-43fe-8be6-7c7a2cecf3c2"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dy"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dy"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2422,7 +2422,7 @@
             <referencesInternal>
               <reference
                 Id="1864a09e-c61d-4ac9-9ca6-0f58fc1a5e22"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3DCheckIfEatingPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3DCheckIfEatingPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2496,7 +2496,7 @@
                   <referencesInternal>
                     <reference
                       Id="9fcfd106-9d97-4d0a-9adf-aeed8067cae2"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3DCheckIfEatingPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)]) ParameterIdentifier%3Dsnake"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3DCheckIfEatingPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)]) ParameterIdentifier%3Dsnake"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2520,7 +2520,7 @@
             <referencesInternal>
               <reference
                 Id="6fec4979-23df-44cb-94a2-d03564686596"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2582,7 +2582,7 @@
                   <referencesInternal>
                     <reference
                       Id="3477f5a5-388a-4a64-95ef-5174cad961f6"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsnake"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsnake"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2601,7 +2601,7 @@
                   <referencesInternal>
                     <reference
                       Id="891f9648-3355-4c7d-a775-55edbd1fbe88"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DboardH"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DboardH"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2620,7 +2620,7 @@
                   <referencesInternal>
                     <reference
                       Id="d03d23f7-f229-4736-9604-3f2a33e09922"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DboardW"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet Member%3D(Name%3DPlacePellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DboardW"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -2646,7 +2646,7 @@
         <referencesInternal>
           <reference
             Id="1546e2cd-6393-49d6-bd26-79bd66d7bd22"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -2747,7 +2747,7 @@
             <referencesInternal>
               <reference
                 Id="33796853-ad45-4109-bfd2-e95abb1a2372"
-                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3DGrow"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3DGrow"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2828,7 +2828,7 @@
             <referencesInternal>
               <reference
                 Id="c7dc99e1-6466-40c9-8244-9ab4eac9545e"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D_direction"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D_direction"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2895,7 +2895,7 @@
             <referencesInternal>
               <reference
                 Id="9f7431cb-cfdd-4d23-b344-46580fbd47e0"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D_snakeBody"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D_snakeBody"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -2961,7 +2961,7 @@
             <referencesInternal>
               <reference
                 Id="3635f026-9d0e-4188-8af4-12ea60b146c7"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3023,7 +3023,7 @@
                   <referencesInternal>
                     <reference
                       Id="0a3802b9-b177-4d46-a6dc-8fbb3aaa4b05"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dbodies"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dbodies"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3042,7 +3042,7 @@
                   <referencesInternal>
                     <reference
                       Id="9cc34cb2-e662-4fd1-a4a6-8356c04e1368"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DxPosition"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DxPosition"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3061,7 +3061,7 @@
                   <referencesInternal>
                     <reference
                       Id="5ebcfa92-85a9-4053-ad8c-a42ce17674e6"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DyPosition"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DAddBody OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DyPosition"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3085,7 +3085,7 @@
             <referencesInternal>
               <reference
                 Id="8fbbbefb-c3da-4381-8354-59404055963f"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DCheckSelfCannibalism OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DCheckSelfCannibalism OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3159,7 +3159,7 @@
                   <referencesInternal>
                     <reference
                       Id="392d913b-4303-423c-a282-12bfeebebd1b"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DCheckSelfCannibalism OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)]) ParameterIdentifier%3Dgm"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DCheckSelfCannibalism OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)]) ParameterIdentifier%3Dgm"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3178,7 +3178,7 @@
                   <referencesInternal>
                     <reference
                       Id="c3c2e6fa-387f-4be5-987c-d66c3c67ad9e"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DCheckSelfCannibalism OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DInputHandler)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)]) ParameterIdentifier%3DnewHead"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DCheckSelfCannibalism OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DInputHandler)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)]) ParameterIdentifier%3DnewHead"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3202,7 +3202,7 @@
             <referencesInternal>
               <reference
                 Id="44d757e4-0c67-42eb-825b-75e8081581f0"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DSetDirection OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DSetDirection OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3264,7 +3264,7 @@
                   <referencesInternal>
                     <reference
                       Id="1dfb6d8a-451f-41fe-b835-73003fe288a1"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D(Name%3DSetDirection OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnewDir"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D(Name%3DSetDirection OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnewDir"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3288,7 +3288,7 @@
             <referencesInternal>
               <reference
                 Id="279c261a-59a0-44b6-8654-a080c6ecc020"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3DGetCoords"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3DGetCoords"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3367,7 +3367,7 @@
             <referencesInternal>
               <reference
                 Id="57d92d78-f84e-46f3-8cf5-825746212a29"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3DGetHead"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3DGetHead"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3446,7 +3446,7 @@
             <referencesInternal>
               <reference
                 Id="2d42f78c-eb5d-4a2d-afeb-e533a8126882"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3DGetNewHead"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3DGetNewHead"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3525,7 +3525,7 @@
             <referencesInternal>
               <reference
                 Id="159b6897-ced4-4e95-b4f3-49deed34c091"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3DGetTail"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3DGetTail"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3604,7 +3604,7 @@
             <referencesInternal>
               <reference
                 Id="d34276be-4271-45fd-995a-953b6afcb3a9"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake Member%3D.ctor"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3672,7 +3672,7 @@
         <referencesInternal>
           <reference
             Id="7db4e6ba-5c46-4c67-853c-e8139b21a383"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -3730,7 +3730,7 @@
             <referencesInternal>
               <reference
                 Id="af094e47-a46d-4623-b4ff-a9721fc895f3"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3D(Name%3DDrawPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3D(Name%3DDrawPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3792,7 +3792,7 @@
                   <referencesInternal>
                     <reference
                       Id="4464d1c6-e9a7-4eb1-abb8-1d320a7e8919"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3D(Name%3DDrawPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)]) ParameterIdentifier%3Dcoordinate"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3D(Name%3DDrawPellet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)]) ParameterIdentifier%3Dcoordinate"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3816,7 +3816,7 @@
             <referencesInternal>
               <reference
                 Id="41d67026-6ba3-4299-9c96-abc811ece23e"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -3878,7 +3878,7 @@
                   <referencesInternal>
                     <reference
                       Id="37db3365-0db8-40d9-97d6-6f734f175f74"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)]) ParameterIdentifier%3Dsnake"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)]) ParameterIdentifier%3Dsnake"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3897,7 +3897,7 @@
                   <referencesInternal>
                     <reference
                       Id="122c4b9d-eda2-41f6-a925-8156efb4c2ee"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)]) ParameterIdentifier%3Dpellet"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)]) ParameterIdentifier%3Dpellet"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3916,7 +3916,7 @@
                   <referencesInternal>
                     <reference
                       Id="f69d6dab-7025-4589-9b85-cb777309901b"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DCoordinate)]) ParameterIdentifier%3DnewHead"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3D(Name%3DUpdateScreen OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DSnake)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DPellet)%2C(Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DCoordinate)]) ParameterIdentifier%3DnewHead"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -3940,7 +3940,7 @@
             <referencesInternal>
               <reference
                 Id="4831fc6d-1ee5-4d9d-bad0-96533f8acc70"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3DGetHeight"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3DGetHeight"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -4019,7 +4019,7 @@
             <referencesInternal>
               <reference
                 Id="2cfc3a09-d7e0-410b-b590-a7c8342187dd"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3DGetWidth"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3DGetWidth"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -4098,7 +4098,7 @@
             <referencesInternal>
               <reference
                 Id="f730cb12-a28b-4171-beda-379cf8d54637"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3DWriteStartUp"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3DWriteStartUp"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -4163,7 +4163,7 @@
             <referencesInternal>
               <reference
                 Id="60834cec-b968-4a95-bba3-2532e691b9da"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DScreenHandler Member%3D.ctor"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DScreenHandler Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -4231,7 +4231,7 @@
         <referencesInternal>
           <reference
             Id="7245d816-87cc-454e-9138-241181181b9f"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGame"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGame"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -4330,7 +4330,7 @@
             <referencesInternal>
               <reference
                 Id="9dd69012-5bda-4fc3-a3cc-70a037923315"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGame Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGame Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -4393,7 +4393,7 @@
                   <referencesInternal>
                     <reference
                       Id="4490dafa-5c5a-477b-b2dc-cba071755b06"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGame Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Darguments"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGame Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Darguments"
                       tag="ViewCode" />
                   </referencesInternal>
                   <lowerValueInternal>
@@ -4429,7 +4429,7 @@
             <referencesInternal>
               <reference
                 Id="45967078-6ac7-41a3-b239-a2e2073ddd7e"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeMess%2Fbin%2FDebug%2FSnakeMess.exe&quot; Namespace%3DSnakeMess Type%3DGame Member%3D.ctor"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fpsf%2FHome%2Fpg3300%2FRefaktorert_kode_Old_Complete_v1.0%2FOppgave 1%2FSnakeNotMess%2Fbin%2FDebug%2FSnakeNotMess.exe&quot; Namespace%3DSnakeNotMess Type%3DGame Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>

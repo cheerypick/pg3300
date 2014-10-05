@@ -2,18 +2,10 @@
 
 // This handles output
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	internal class ScreenHandler
 	{
-		// Method for preparing
-		public void WriteStartUp()
-		{
-			Console.CursorVisible = false; // Dont want to see the cursor
-			Console.ForegroundColor = ConsoleColor.Green; // Console color
-			Console.SetCursorPosition(10, 10); // Set start poisition
-		}
-
 		// Update screen
 		public void UpdateScreen(Snake snake, Pellet pellet, Coordinate newHead)
 		{
@@ -35,6 +27,7 @@ namespace SnakeMess
 			Console.SetCursorPosition(newHead.X, newHead.Y);
 			Console.Write("@");
 
+			// Make sure the snake can only grow by one each time.
 			snake.Grow = false;
 		}
 

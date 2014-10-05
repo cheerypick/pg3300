@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	// Reading input keys.
 	public class InputHandler
@@ -42,6 +42,3 @@ namespace SnakeMess
 		}
 	}
 }
-
-
-

@@ -83,3 +83,8 @@ D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\pg3300\Kopi\pg3300
 \\psf\Home\pg3300\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\bin\Debug\SnakeMess.exe
 \\psf\Home\pg3300\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\bin\Debug\SnakeMess.pdb
 \\psf\Home\pg3300\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\Git\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\bin\Debug\SnakeNotMess.exe
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\Git\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\bin\Debug\SnakeNotMess.pdb
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\Git\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\Git\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\obj\x86\Debug\SnakeNotMess.exe
+D:\Skule - NITH\2. År\1. Programvarearkitektur\Innlevering 1\Git\Refaktorert_kode_Old_Complete_v1.0\Oppgave 1\SnakeMess\obj\x86\Debug\SnakeNotMess.pdb

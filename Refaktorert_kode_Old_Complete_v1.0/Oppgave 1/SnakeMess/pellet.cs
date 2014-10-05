@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace SnakeMess
+namespace SnakeNotMess
 {
 	// Class for controling the pellets
 	public class Pellet : Coordinate
